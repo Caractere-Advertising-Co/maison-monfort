@@ -1,0 +1,33 @@
+$primary-color: #aa8453;
+$hover: #d6ab76;
+$hover-transparent: #d6ab76a8;
+$secondary-color: #212025;
+$hover-blue: #0a0a0c;
+$light: #fff;
+$dark: #000;
+$light-gray: #f0f0f0;
+$middle-gray: #b0b0b0;
+$dark-gray: #474955;
+$dark-dark-gray: #202024;
+
+/* Mixins Dégradés */
+
+@mixin liGray-to-white {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 248, 249, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 248, 249, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 248, 249, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f7f8f9",GradientType=1);
+}

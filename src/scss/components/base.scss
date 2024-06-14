@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    font: inherit;
+  
+    &:hover {
+        transition: all ease-in-out 300ms;
+    }
+}
+body {
+    min-height: 100dvh;
+    background: $light;
+}
+  
+header {
+    overflow: hidden;
+}
+  
+.content,
+.container {
+    width: 75vw;
+    max-width: 1400px;
+    margin: auto;
+}
+  
+.columns {
+    display: flex;
+    gap: 80px;
+}
