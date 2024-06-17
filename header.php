@@ -30,13 +30,6 @@
     </div>
 
     <header>
-        <?php $banner = get_field('bandeau_top_header','options');
-        if($banner): ?>
-            <div class="top_banner_header">
-                <p><?php echo $banner;?></p>    
-            </div>
-        <?php endif;?>
-
         <?php get_template_part( 'templates-parts/header-nav' );?>
     </header>
 

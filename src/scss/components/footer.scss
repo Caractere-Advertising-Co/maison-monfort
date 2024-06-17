@@ -1,0 +1,136 @@
+footer {
+    background-color: $dark-dark-gray;
+    .container {
+      .footer-top {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 80px;
+        gap: 50px;
+  
+        .col {
+          width: calc(100% / 3);
+          padding-bottom: 50px;
+  
+          .logo-footer {
+            height: 100px;
+            margin-top: 20px;
+  
+            img {
+              width: auto;
+              height: 100%;
+              object-fit: fill;
+            }
+          }
+  
+          h4 {
+            color: $primary-color;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 3px;
+          }
+  
+          p,
+          a {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+
+            color : $light;
+            text-decoration: none;
+  
+            strong {
+              color: $primary-color !important;
+
+              a{
+                color: $primary-color;
+              }
+            }
+          }
+        }
+  
+        .general-infos {
+          min-width: 50%;
+          text-align: left;
+  
+          img {
+            margin-bottom: 20px;
+          }
+  
+          p {
+            color: $light !important;
+            text-align: left;
+            line-height: 1.2rem;
+          }
+        }
+  
+        .col-2 {
+          p,
+          td {
+            font-family: "Montserrat", sans-serif;
+            font-size: .8rem;
+            margin-bottom: 0;
+            color: $light;
+          }
+
+          table{
+            width: 100%;
+
+            td{
+              &:nth-child(2){
+                text-align: right;
+              }
+            }
+          }
+
+          table + p{
+            margin: 20px 0;
+          }
+        }
+      }
+    }
+  
+    .footer_bottom {
+      background-color: $primary-color;
+  
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px 0;
+  
+        a {
+          font-weight: 300;
+          letter-spacing: 1px;
+          font-size: 0.8rem;
+          font-weight: 400;
+          color:$light;
+          text-decoration: none;
+        }
+  
+        p {
+          color: $light;
+          font-size: 0.8rem;
+          letter-spacing: 3px;
+          margin: 0;
+          line-height: 1rem;
+          text-align: center;
+  
+          strong {
+            color: $primary-color;
+          }
+  
+          a {
+            color: $light;
+            font-weight: 600;
+          }
+        }
+      }
+  
+      .mobile {
+        display: none;
+      }
+    }
+  }
+  

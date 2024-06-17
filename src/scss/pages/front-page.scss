@@ -1,0 +1,27 @@
+#hero{
+    height: 750px;
+
+    .swiper-hero{
+        height: 750px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        background-color: $light;
+        color: $dark-dark-gray;
+
+        padding:40px 20px;
+        position: absolute;
+        left: 2.5vw;
+        top: calc(50% + 50px);
+
+        &::after{
+            font-size: .9rem;
+        }
+    }
+
+    .swiper-button-next{
+        right: 2.5vw;
+        left: auto;
+    }
+}
