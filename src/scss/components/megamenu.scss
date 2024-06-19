@@ -1,0 +1,116 @@
+#megamenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    background-color: $dark;
+    transform: translateX(100vw);
+    transition: ease-in-out 300ms;
+    overflow: hidden;
+
+    .columns{
+        height: calc(100% - 180px);
+        padding: 90px 0;
+        align-items: flex-end;
+
+        .colg{
+            width: 70%;
+        }
+
+        .cold{
+            width: 30%;
+
+            h4{
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: $primary-color;
+                letter-spacing: 8px;
+                margin-top: 20px;
+            }
+
+            p,
+            a{
+                color: $light;
+                text-decoration: none;
+
+                strong{
+                    color : $primary-color;
+                    font-weight: 300;
+
+                    a{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .megamenu-list{
+        list-style: none;
+            li{
+                a{
+                    color:$light;
+                    text-decoration: none;
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    line-height: 3.5rem;
+                }
+
+                .sub-menu{
+                    transform: scaleY(0);
+                    padding: 0;
+                    transform-origin: bottom;
+                    height: 0;
+                    transition: all ease-in-out 200ms;
+                    opacity: 0;
+                    margin-left: 50px;
+
+                    li{
+                        a{
+                            font-size: 1rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .menu-item-has-children > a{
+                &::after{
+                    content: "";
+                    color: $primary-color;
+                    border-right: 3px solid $primary-color;
+                    border-bottom: 3px solid $primary-color;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    transform: translate(60%, -10%) rotate(-45deg);   
+                    transition: all ease-in-out 300ms;         
+                }
+            }
+
+            .menu-item-has-children{
+                &:hover{
+                    .sub-menu{
+                        transform: scaleY(1);
+                        padding: 30px 0;
+                        opacity: 1;
+                        height: auto;
+                    }
+
+                    a {
+                        &::after{
+                            content: "";
+                            transform: translate(60%, -10%) rotate(45deg);            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+#megamenu.open{
+    transform: translateX(0);
+}

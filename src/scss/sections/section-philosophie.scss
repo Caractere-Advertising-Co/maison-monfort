@@ -1,0 +1,55 @@
+#section-philosophie{
+    padding: 50px 0;
+
+    .block-img{
+        margin-left: 0;
+        width: 75vw;
+        height: 550px;
+    }
+
+    .swiper-philo{
+        height: 550px;
+        width: 75vw;
+        margin-left: 0;
+
+        .swiper-button-next-philo,
+        .swiper-button-prev-philo{
+            width: 50px;
+            height: 50px;
+            background-color: $primary-color;
+            top: auto;
+            left: auto;
+            right: 23vw;
+            bottom: 0;
+            
+            &::after{
+                font-size: .8rem;
+                color : $light;
+            }
+        }
+
+        .swiper-button-prev-philo{
+            background-color: $light;
+            right: calc(23vw + 50px);
+
+            &::after{
+                font-size: .8rem;
+                color : $middle-gray;
+            }
+        }
+    }
+
+    .container{
+        margin-top: -350px;
+        position: relative;
+        z-index: 10;
+        pointer-events: none;
+
+        .cold{
+            background-color: $dark-dark-gray;
+            padding: 80px 50px;
+            color: $light;
+            width: calc( 50% - 100px);
+        }
+    }
+}

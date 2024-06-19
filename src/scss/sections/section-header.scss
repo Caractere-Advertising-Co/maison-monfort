@@ -1,0 +1,30 @@
+#section-header{
+    width: 90vw;
+    margin:auto;
+
+    .block-img{
+        height: 300px;
+    }
+
+    .container{
+        margin-top: -100px;
+
+        .colg{
+            background-color: $light;
+            width: calc(50% - 100px);
+            padding: 20px 50px;
+
+            h2{
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: $primary-color;
+                letter-spacing: 10px;
+            }
+
+            h1{
+                font-weight: 600;
+                font-size: 4rem;
+            }
+        }
+    }
+}

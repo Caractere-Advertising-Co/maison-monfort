@@ -1,9 +1,10 @@
 <div class="container-full-width">
     <?php 
         $logo = get_field('logo','options');
+        $url = get_bloginfo( 'url' );
 
         if($logo):
-            echo "<img class='logo' src='".$logo['url']."' alt='".$logo['name']."'/>";
+            echo "<a href=".$url." class='logo'><img src='".$logo['url']."' alt='".$logo['name']."'/></a>";
         endif;
     ?>  
 

@@ -1,0 +1,98 @@
+#content-contact{
+    margin-bottom: 50px;
+    .container{
+        .colg{
+            .intro-contact{
+                margin-bottom: 50px;
+                p{
+                    font-weight: 600;
+                }
+
+                p + p {
+                    margin-top: 20px;
+                }
+            }
+
+            .infos-contact{
+                a{
+                    color: $primary-color;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+
+                table {
+                    margin: 20px 0;
+
+                    tr{
+                        :first-child{
+                            width: 60px;
+                        }
+                    }
+                }
+
+                h3{
+                    font-size: .8rem;
+                    font-weight: 600;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    color: $primary-color;
+                    letter-spacing: 10px;
+                }
+            }
+        }
+
+        .cold{
+            form{
+                width: 100%;
+
+                span,
+                input{
+                    width: 100%;
+                }
+                input,
+                textarea,
+                select{
+                    border: none;
+                    border-bottom: 1px solid $middle-gray;
+                    outline: none;
+                    font-size: .8rem;
+                    min-width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 20px;
+
+                    &:focus{
+                        border-color: $primary-color;
+                    }
+                }
+
+                .flex-form p{
+                    display: flex;
+                    gap: 20px;
+                }
+
+                input[type="submit"]{
+                    border: 1px solid $light-gray;
+                    background: none;
+                    text-transform: uppercase;
+                    width: fit-content;
+                    min-width: fit-content;
+                    max-width: fit-content;
+                    padding: 5px 20px;
+                    letter-spacing: 5px;
+                    cursor: pointer;
+
+                    &:hover{
+                        border-color: $primary-color;
+                        color: $primary-color;
+                    }
+
+                    &:focus{
+                        background-color: $primary-color;
+                        border: none;
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+}

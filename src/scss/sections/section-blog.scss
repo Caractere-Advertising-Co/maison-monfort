@@ -1,0 +1,42 @@
+#section-blog{
+    padding: 50px 0;
+
+    .container{
+        h2{
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+    }
+
+    .columns{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .card-news{
+            width: 100%;
+            border-bottom: 1px solid $middle-gray;
+            padding-bottom: 30px;
+
+            .block-img{
+                height: 200px;
+            }
+
+            h3{
+                color: $primary-color;
+                font-size: 1.2rem;
+            }
+
+            p{
+                margin: 20px auto;
+            }
+
+            .cta-blog{
+                display: block;
+                letter-spacing: 3px;
+                color: $primary-color;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}

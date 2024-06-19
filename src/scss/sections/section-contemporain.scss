@@ -1,0 +1,105 @@
+#section-contemporain{
+    padding : 50px 0;
+
+    .swiper-contempo{
+        height: 700px;
+        width: calc(50% + 100px);
+        margin-right: 0;
+    
+        .swiper-button-next-contempo,
+        .swiper-button-prev-contempo{
+            width: 50px;
+            height: 50px;
+            background-color: $primary-color;
+            top: auto;
+            left: 10vw;
+            bottom: 0;
+                
+            &::after{
+                font-size: .8rem;
+                color : $light;
+            }
+        }
+    
+        .swiper-button-next-contempo{
+            background-color: $light;
+            left: calc( 10vw + 50px);
+    
+            &::after{
+                font-size: .8rem;
+                color : $middle-gray;
+            }
+        }
+    }
+    
+    .container{
+        margin-top: -380px;
+        z-index: 11;
+        position: relative;
+        pointer-events: none;
+
+        .colg{
+            background-color: $light;
+            width: calc( 60% - 80px);
+            padding: 50px 80px 50px 0;
+        }
+
+        .cold{
+            width: 40%;
+        }
+    }
+}
+
+#section-contemporain-mirror{
+    padding : 50px 0;
+
+    .swiper-contempo-mirror{
+        height: 700px;
+        width: calc(50% + 100px);
+        margin-left: 0;
+    
+        .swiper-button-next-contempo-mirror,
+        .swiper-button-prev-contempo-mirror{
+            width: 50px;
+            height: 50px;
+            background-color: $primary-color;
+            top: auto;
+            left: auto;
+            right: 10vw;
+            bottom: 0;
+                
+            &::after{
+                font-size: .8rem;
+                color : $light;
+            }
+        }
+    
+        .swiper-button-prev-contempo-mirror{
+            background-color: $light;
+            right: calc( 10vw + 50px);
+            left: auto;
+    
+            &::after{
+                font-size: .8rem;
+                color : $middle-gray;
+            }
+        }
+    }
+    
+    .container{
+        margin-top: -380px;
+        z-index: 11;
+        position: relative;
+        pointer-events: none;
+
+        .colg{
+            width: 40%;
+        }
+
+        .cold{
+            background-color: $light;
+            width: calc( 60% - 80px);
+            padding: 50px 0 50px 80px;
+        }
+    }
+}

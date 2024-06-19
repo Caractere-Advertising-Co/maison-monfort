@@ -1,0 +1,68 @@
+#section-contact{
+    .banner{
+        height: 250px;
+    }
+
+    .container{
+        padding: 100px 0 100px;
+        
+        .colg{
+            h2{
+                font-size: 2rem;
+                line-height: 2.5rem;
+                font-weight: 400;
+
+                em{
+                    color:$primary-color;
+                }
+            }
+        }
+
+        .cold{
+            form{
+                width: 100%;
+
+                span,
+                input{
+                    width: 100%;
+                }
+                input,
+                textarea{
+                    border: none;
+                    border-bottom: 1px solid $middle-gray;
+                    outline: none;
+                    font-size: .8rem;
+                    min-width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 20px;
+
+                    &::placeholder{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        letter-spacing: 3px;
+                    }
+
+                    &:focus{
+                        border-color: $primary-color;
+                    }
+                }
+
+                .flex-form p{
+                    display: flex;
+                    gap: 20px;
+                }
+
+                input[type="submit"]{
+                    border: 1px solid $light-gray;
+                    background: none;
+                    text-transform: uppercase;
+                    width: fit-content;
+                    min-width: fit-content;
+                    max-width: fit-content;
+                    padding: 5px 20px;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+    }
+}

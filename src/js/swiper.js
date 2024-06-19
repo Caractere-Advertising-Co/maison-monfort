@@ -21,4 +21,32 @@ const hero = new Swiper( ".swiper-hero" , {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-})
+});
+
+const philo = new Swiper(".swiper-philo", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next-philo",
+        prevEl: ".swiper-button-prev-philo",
+    },
+});
+
+
+const contempo = new Swiper(".swiper-contempo", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next-contempo",
+        prevEl: ".swiper-button-prev-contempo",
+    },
+});
+
+const contempo_mirror = new Swiper(".swiper-contempo-mirror", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next-contempo-mirror",
+        prevEl: ".swiper-button-prev-contempo-mirror",
+    },
+});

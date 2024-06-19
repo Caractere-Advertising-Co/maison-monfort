@@ -12,53 +12,16 @@ body {
     min-height: 100dvh;
     background: $light;
 }
-  
-header {
-    overflow: hidden;
-    min-height: 120px;
-    margin-top: 20px;
 
-    .container-full-width{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0;
+.fixed{
+    position: fixed;
+    left:5vw;
+}
 
-        .logo{
-            height: 100px;
-            margin-left: calc(((100% + 80px) / 2) - 95px);
-        }
-
-        .icon-megamenu{
-            width: 80px;
-    
-            .hamburger .line{
-                width: 30px;
-                height: 3px;
-                border-radius: 3px;
-                background-color: $light-gray;
-                display: block;
-                margin: 8px auto;
-                margin-right: 0;
-                -webkit-transition: all 0.3s ease-in-out;
-                -o-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-            }
-            
-            .hamburger:hover{
-                cursor: pointer;
-            }
-        
-            #hamburger-12.is-active .line:nth-child(1){
-                background-color: $primary-color;
-                -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                -o-transform: translateX(-50%);
-                transform: translateX(-50%);
-            }
-            
-        }
-    }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
   
 .content,
@@ -76,6 +39,42 @@ header {
 .columns {
     display: flex;
     gap: 80px;
+
+    .cold,
+    .colg{
+        width: 50%;
+    }
+}
+
+.cta{
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8rem;
+    color: $secondary-color;
+    position: relative;
+    padding: 10px 0;
+    transition: all ease-in-out 300ms;
+
+    &::before{
+        content:'';
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        transform-origin: left;
+        background-color: $primary-color;
+        transform: scaleX(0);
+        transition: all ease-in-out 300ms;
+    }
+
+    &:hover{
+        font-weight: 500;
+        &::before{
+            transform: scaleX(1);    
+        }
+    }
 }
 
 /* Scroll to top */
@@ -90,7 +89,7 @@ header {
     height: 50px;
     width: 50px;
     padding: 0;
-    z-index: 999;
+    z-index: 10;
     transition: all ease-in 300ms;
     display: flex;
     justify-content: center;
@@ -101,4 +100,82 @@ header {
       position: relative;
       animation: up-and-down 0.8s linear infinite;
     }
-  }
+}
+
+
+/* Navigation Articles */
+
+#navigation-post{
+
+    .container{
+        gap: 60px;
+        height: 450px;
+        align-items: center;
+        justify-content: center;
+
+        .colg,
+        .cold{
+            width: 35%;
+
+            h3{
+                font-size: 1.3rem;
+                color:$primary-color;
+                text-transform: none;
+                letter-spacing: 0;
+                font-weight: 500;
+
+                &::after{
+                    content: '→';
+                    color: $primary-color;
+                    margin-left: 30px;
+                    font-size: .9rem;
+                }
+            }
+
+            .cta{
+                margin-top: 30px;
+                display: block;
+                width: fit-content;
+            }
+        }
+
+        .colg{
+            width: calc( 35% + 60px);
+            h3,
+            p,
+            a{
+                text-align: right;
+                margin-right: 0;
+                margin-left: auto;
+            }
+
+            h3{
+                &::after{
+                    content: '';
+                    margin-left: 0;
+                }
+
+                &::before{
+                    content: '←';
+                    color: $primary-color;
+                    margin-right: 30px;
+                    font-size: .9rem;
+                }
+            }
+
+            a{
+
+                &::before{
+                    right: 0;
+                    left: auto;
+                    transform-origin: right;
+                }
+            }
+        }
+
+        .colg + .cold{
+            border-left: 1px solid $light-gray;
+            padding-left: 60px;
+        }
+    }
+}

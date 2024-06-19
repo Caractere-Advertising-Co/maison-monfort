@@ -1,0 +1,19 @@
+#section-fullscreen{
+    height: 90vh;
+    min-height: 700px   ;
+    position: relative;
+    margin: 50px auto;
+
+    .container{
+        position: absolute;
+        top: 40%;
+        left: 12.5vw;
+    
+
+        .colg{
+            background-color: $light;
+            padding: 80px 50px;
+            width: calc(50% - 100px);
+        }
+    }
+}

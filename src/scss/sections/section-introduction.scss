@@ -1,0 +1,33 @@
+#section-introduction{
+    padding: 100px 0 50px;
+
+    .container{
+        gap: 100px;
+
+        .cold,
+        .colg{
+            width: 50%;
+        }
+
+        .colg{
+            h2{
+                strong{
+                    color:$primary-color;
+                }
+            }
+
+            .block-img{
+                margin-top: 80px;
+                height: 500px;
+            }
+        }
+
+        .cold{
+            padding-top: 100px;
+
+            p + p {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

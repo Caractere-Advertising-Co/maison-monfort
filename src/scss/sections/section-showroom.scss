@@ -1,0 +1,37 @@
+#section-showroom{
+    .separator{
+        width: 100vw;
+        height: 300px;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container{
+        padding: 100px 0;
+
+        .colg{
+
+            h2{
+                strong{
+                    color:$primary-color;
+                    
+                }
+            }
+            
+            .block-img{
+                margin-top: 100px;
+                height: 700px;
+            }
+        }
+
+        .cold{
+            padding-top: 150px;
+        }
+    }
+}
