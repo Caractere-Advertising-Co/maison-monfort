@@ -131,8 +131,6 @@ img{
 
         .colg,
         .cold{
-            width: 35%;
-
             h3{
                 font-size: 1.3rem;
                 color:$primary-color;
@@ -156,7 +154,7 @@ img{
         }
 
         .colg{
-            width: calc( 35% + 60px);
+            width: 35%;
             h3,
             p,
             a{
@@ -187,6 +185,10 @@ img{
                     transform-origin: right;
                 }
             }
+        }
+
+        .cold{
+            width: calc(35% - 60px);
         }
 
         .colg + .cold{
