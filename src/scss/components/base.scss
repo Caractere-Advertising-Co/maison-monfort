@@ -8,6 +8,11 @@
         transition: all ease-in-out 300ms;
     }
 }
+
+.grecaptcha-badge { 
+    visibility: hidden !important;
+}
+
 body {
     min-height: 100dvh;
     background: $light;
