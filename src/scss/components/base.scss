@@ -124,7 +124,7 @@ img{
 #navigation-post{
 
     .container{
-        gap: 60px;
+        gap: 0;
         height: 450px;
         align-items: center;
         justify-content: center;
@@ -154,7 +154,8 @@ img{
         }
 
         .colg{
-            width: 35%;
+            width: calc(35% - 60px);
+            padding-right: 60px;
             h3,
             p,
             a{
