@@ -13,6 +13,17 @@
     visibility: hidden !important;
 }
 
+.disclaimer{
+    font-size: .7rem;
+    font-style: italic;
+
+    a{
+        font-size: .7rem;
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
 body {
     min-height: 100dvh;
     background: $light;
