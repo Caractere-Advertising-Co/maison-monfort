@@ -36,15 +36,15 @@ $conf      = get_field('confidentialites','options');
     </div>
     <div class="footer_bottom">
         <div class="container desktop">
-            <?php if($cookies): ?><a href="<?php echo $cookies;?>">Cookies</a><?php endif;?>
+            <?php if($cookies): ?><a href="<?php echo $cookies['url'];?>">Cookies</a><?php endif;?>
             <div><?php if($copyright): echo $copyright; endif;?></div>
-            <?php if($conf): ?><a href="<?php echo $conf;?>">Confidentialité</a><?php endif;?>
+            <?php if($conf): ?><a href="<?php echo $conf['url'];?>">Confidentialité</a><?php endif;?>
         </div>
 
         <div class="container mobile">
             <div class="links">
-                <?php if($cookies): ?><a href="<?php echo $cookies;?>">Cookies</a><?php endif;?>
-                <?php if($conf): ?><a href="<?php echo $conf;?>">Confidentialité</a><?php endif;?>
+                <?php if($cookies): ?><a href="<?php echo $cookies['url'];?>">Cookies</a><?php endif;?>
+                <?php if($conf): ?><a href="<?php echo $conf['url'];?>">Confidentialité</a><?php endif;?>
             </div>
 
             <div class="copyright">
