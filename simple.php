@@ -12,6 +12,8 @@ else :
 endif;
 get_header();?>
 
+<?php get_template_part( 'templates-parts/section-header');?>
+
 <div id="page-simple">
     <div class="container">
         <?php echo $text;?>
