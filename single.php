@@ -1,8 +1,6 @@
 <?php 
 
-/* Template Name: Page Article 
-
-*/
+/* Template Name: Page Article */
 
 get_header();?>
 
