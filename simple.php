@@ -16,6 +16,7 @@ get_header();?>
 
 <div id="page-simple">
     <div class="container">
+
         <?php echo $text;?>
         <?php if($cta):?>
             <a href="<?php echo $cta['url'];?>" class="cta"><?php echo $cta['title'];?></a>
