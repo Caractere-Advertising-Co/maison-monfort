@@ -1,14 +1,12 @@
 <?php 
 
-$cttCol1 = get_field('description-footer','options');
-$cttCol2 = get_field('horaires','options');
-$cttCol3 = get_field('infos_contact_footer','options');
-
+$cttCol1   = get_field('description-footer','options');
+$cttCol2   = get_field('horaires','options');
+$cttCol3   = get_field('infos_contact_footer','options');
 
 $copyright = get_field('copyright','options');
-$cookies = get_field('cookies','options');
-$conf = get_field('confidentialites','options');
-
+$cookies   = get_field('cookies','options');
+$conf      = get_field('confidentialites','options');
 
 ?>
 
@@ -38,27 +36,19 @@ $conf = get_field('confidentialites','options');
     </div>
     <div class="footer_bottom">
         <div class="container desktop">
-            <a href="">Cookies</a>
-            <div>
-                <?php 
-                    
-                    if($copyright): echo $copyright; endif;
-                ?>
-            </div>
-            <a href="">Confidentialité</a>
+            <?php if($cookies): ?><a href="<?php echo $cookies;?>">Cookies</a><?php endif;?>
+            <div><?php if($copyright): echo $copyright; endif;?></div>
+            <?php if($conf): ?><a href="<?php echo $conf;?>">Confidentialité</a><?php endif;?>
         </div>
 
         <div class="container mobile">
             <div class="links">
-                <a href="">Cookies</a>
-                <a href="">Confidentialité</a>
+                <?php if($cookies): ?><a href="">Cookies</a><?php endif;?>
+                <?php if($confi): ?><a href="">Confidentialité</a><?php endif;?>
             </div>
 
             <div class="copyright">
-            <?php 
-                    $copyright = get_field('copyright','options');
-                    if($copyright): echo $copyright; endif;
-                ?>
+                <?php if($copyright): echo $copyright; endif;?>
             </div>
         </div>
     </div>
