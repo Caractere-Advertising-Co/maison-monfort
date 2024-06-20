@@ -43,8 +43,8 @@ $conf      = get_field('confidentialites','options');
 
         <div class="container mobile">
             <div class="links">
-                <?php if($cookies): ?><a href="">Cookies</a><?php endif;?>
-                <?php if($confi): ?><a href="">Confidentialité</a><?php endif;?>
+                <?php if($cookies): ?><a href="<?php echo $cookies;?>">Cookies</a><?php endif;?>
+                <?php if($conf): ?><a href="<?php echo $conf;?>">Confidentialité</a><?php endif;?>
             </div>
 
             <div class="copyright">
