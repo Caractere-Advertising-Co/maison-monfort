@@ -12,9 +12,11 @@ $title = get_field('title_header');
         <?php endif;?>
     </div>
     <div class="container columns">
-        <div class="colg">
-            <?php if($title): echo $title; endif?>
-        </div>
-        <div class="cold"></div>
+        <?php if($title): ?>
+            <div class="colg">
+                <?php echo $title;?>
+            </div>
+            <div class="cold"></div>
+        <?php endif;?>
     </div>
 </div>  
