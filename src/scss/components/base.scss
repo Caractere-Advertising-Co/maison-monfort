@@ -222,11 +222,19 @@ img{
         }
 
         h2{
-            font-size: 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.3rem;
             color: $primary-color;
-            letter-spacing: 5px;
-            margin-top: 30px;
+            letter-spacing: 3px;
+            margin-top: 40px;
             margin-bottom: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            color: $primary-color;
         }
     }
 }
