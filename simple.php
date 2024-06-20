@@ -8,7 +8,7 @@ $text;
 if($content):
     $text = $content;
 else : 
-    $text = get_content();
+    $text = get_the_content();
 endif;
 get_header();?>
 
