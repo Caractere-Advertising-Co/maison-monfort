@@ -198,3 +198,24 @@ img{
         }
     }
 }
+
+#page-404,
+#page-simple{
+    margin: 100px auto;
+
+    .container{
+        p{
+            text-align: left;
+        }
+
+        table{
+            max-width: 500px;
+            margin-left: 0;
+        }
+
+        table,
+        tr, td{
+            border: none;
+        }
+    }
+}
