@@ -201,7 +201,7 @@ img{
 
 #page-404,
 #page-simple{
-    margin: 100px auto;
+    padding: 200px 0 100px;
 
     .container{
         p{
@@ -240,6 +240,10 @@ img{
 
         #cmplz-document{
             max-width: 100%;
+        }
+
+        .cta{
+            margin: 30px auto;
         }
     }
 }
