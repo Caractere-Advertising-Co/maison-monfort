@@ -1,6 +1,9 @@
 <?php 
 /* Template Name: Page 404 */
 
+$cta = get_field('cta');
+$content = get_field('content');
+
 get_header();?>
 
 <div id="page-404">

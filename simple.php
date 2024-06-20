@@ -1,6 +1,9 @@
 <?php 
 /* Template Name: Page simple */
 
+$cta = get_field('cta');
+$content = get_field('content');
+
 get_header();?>
 
 <div id="simple-page">
