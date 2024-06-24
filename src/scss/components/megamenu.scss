@@ -50,6 +50,8 @@
     .megamenu-list{
         list-style: none;
             li{
+                width: fit-content;
+                
                 a{
                     color:$light;
                     text-decoration: none;
