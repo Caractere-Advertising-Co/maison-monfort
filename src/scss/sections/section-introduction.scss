@@ -17,10 +17,17 @@
                 line-height: 2rem;
                 font-weight: 700;
             }
+
+            p{
+                strong{
+                    font-weight: 500;
+                }
+            }
         }
 
         .colg{
             h2{
+                margin-bottom: 40px;
                 strong{
                     color:$primary-color;
                 }
