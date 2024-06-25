@@ -7,6 +7,16 @@
         .cold,
         .colg{
             width: 50%;
+
+            h3{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                color: $primary-color;
+                margin: 20px 0 10px;
+                line-height: 2rem;
+                font-weight: 300;
+            }
         }
 
         .colg{
@@ -15,6 +25,7 @@
                     color:$primary-color;
                 }
             }
+            
 
             .block-img{
                 margin-top: 80px;
