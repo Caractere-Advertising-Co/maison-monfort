@@ -29,8 +29,7 @@ $cta = get_field('cta_inspiration','options');
                     </a>
                 <?php 
                 endif; $i++;
-                endforeach;
-            endif;
+            endforeach;
         endif;?>
     </div>
 
