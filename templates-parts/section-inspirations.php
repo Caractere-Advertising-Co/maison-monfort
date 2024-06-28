@@ -27,7 +27,8 @@ $cta = get_field('cta_inspiration','options');
                     <a data-fslightbox href="<?php echo $g['url'];?>">
                         <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>" class="from-bottom"/>
                     </a>
-                <?php $i++;
+                <?php 
+                endif; $i++;
                 endforeach;
             endif;
         endif;?>
