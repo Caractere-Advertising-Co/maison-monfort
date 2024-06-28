@@ -13,11 +13,23 @@ $cta = get_field('cta_inspiration','options');
 
     <div class="container-full-width grid">
         <?php if($galerie):
-            foreach($galerie as $g):?>
-                <a data-fslightbox href="<?php echo $g['url'];?>">
-                    <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>" class="from-bottom"/>
-                </a>
-            <?php endforeach;
+            $i = 0;
+            $limit;
+
+            if(is_front_page()):
+                $limit = 7;
+            else :
+                $limit = 100;
+            endif;
+            
+            foreach($galerie as $g):
+                if($i < $limit): ?>
+                    <a data-fslightbox href="<?php echo $g['url'];?>">
+                        <img src="<?php echo $g['url'];?>" alt="<?php echo $g['title'];?>" class="from-bottom"/>
+                    </a>
+                <?php $i++;
+                endforeach;
+            endif;
         endif;?>
     </div>
 
