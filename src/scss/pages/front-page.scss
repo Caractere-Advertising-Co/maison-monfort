@@ -6,6 +6,10 @@
 
         .swiper-wrapper{
             .swiper-slide{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
                 a{
                     text-align: center;
                     height: 100%;
