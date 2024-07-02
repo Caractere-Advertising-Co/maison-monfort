@@ -29,11 +29,11 @@
         grid-auto-flow: dense;
 
         a{
-            &:nth-child(1n),
-            &:nth-child(3n),
-            &:nth-child(4n),
-            &:nth-child(5n),
-            &:nth-child(6n){
+            &:nth-child(1n + 1),
+            &:nth-child(3n + 1),
+            &:nth-child(4n + 1),
+            &:nth-child(5n + 1),
+            &:nth-child(6n + 1){
                 grid-row: span 2;
             }
         }
