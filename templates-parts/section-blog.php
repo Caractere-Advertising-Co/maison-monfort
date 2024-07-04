@@ -21,7 +21,7 @@ $news = new WP_Query($args);?>
                 $content = get_the_content();
                 ?>
             
-                <div class="card-news">
+                <div class="card-news from-bottom">
                     <div class="block-img">
                         <img src="<?php echo $thmb;?>" alt=""/>
                     </div>

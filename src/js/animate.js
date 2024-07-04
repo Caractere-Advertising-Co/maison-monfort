@@ -26,25 +26,50 @@ $(document).ready(function () {
 
   function removeMagic(data, direction) {
     data.classList.add("invisible");
-    data.classList.add(direction);
+    data.classList.remove(direction);
   }
 
   inView.offset(150);
 
   inView(".from-left").on("enter", (el) => {
+    removeMagic(el, "fade-out-left");
     makeMagic(el, "fade-in-left");
   });
 
   inView(".from-right").on("enter", (el) => {
+    removeMagic(el, "fade-out-right");
     makeMagic(el, "fade-in-right");
   });
 
   inView(".from-bottom").on("enter", (el) => {
+    removeMagic(el, "fade-out-bottom");
     makeMagic(el, "fade-in-bottom");
   });
 
   inView(".from-top").on("enter", (el) => {
+    removeMagic(el, "fade-out-top");
     makeMagic(el, "fade-in-top");
+  });
+
+
+  inView(".from-left").on("exit", (el) => {
+    removeMagic(el, "fade-in-left");
+    makeMagic(el, "fade-out-left");
+  });
+
+  inView(".from-right").on("exit", (el) => {
+    removeMagic(el, "fade-in-right");
+    makeMagic(el, "fade-out-right");
+  });
+
+  inView(".from-bottom").on("exit", (el) => {
+    removeMagic(el, "fade-in-bottom");
+    makeMagic(el, "fade-out-bottom");
+  });
+
+  inView(".from-top").on("exit", (el) => {
+    removeMagic(el, "fade-in-top");
+    makeMagic(el, "fade-out-top");
   });
 
   /* ANIMATION NUMBER */
@@ -77,36 +102,36 @@ $(document).ready(function () {
 
   /* Scroll animation */
 
-  if (window.location.pathname == "/") {
-    gsap.to(".anim-img-1", {
-      y: 300,
-      duration: 1.5,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: ".galeries-home",
-        scrub: true,
-      },
-    });
+  // if (window.location.pathname == "/") {
+  //   gsap.to(".anim-img-1", {
+  //     y: 300,
+  //     duration: 1.5,
+  //     ease: "power1.out",
+  //     scrollTrigger: {
+  //       trigger: ".galeries-home",
+  //       scrub: true,
+  //     },
+  //   });
 
-    gsap.to(".anim-img-2", {
-      y: -500,
-      duration: 2.5,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: ".galeries-home",
-        scrub: true,
-      },
-    });
+  //   gsap.to(".anim-img-2", {
+  //     y: -500,
+  //     duration: 2.5,
+  //     ease: "power1.out",
+  //     scrollTrigger: {
+  //       trigger: ".galeries-home",
+  //       scrub: true,
+  //     },
+  //   });
 
-    gsap.to(".anim-img-3", {
-      y: -300,
-      duration: 2.5,
-      ease: "power1.out",
-      scrollTrigger: {
-        trigger: ".galeries-home",
-      },
-    });
-  }
+  //   gsap.to(".anim-img-3", {
+  //     y: -300,
+  //     duration: 2.5,
+  //     ease: "power1.out",
+  //     scrollTrigger: {
+  //       trigger: ".galeries-home",
+  //     },
+  //   });
+  // }
 });
 
 /* Accordion animation */
