@@ -12,7 +12,7 @@ $image = get_field('image-presentation');
         <?php if($bg):?><img src="<?php echo $bg['url'];?>" alt="<?php echo $bg['name'];?>" /><?php endif;?>
     </div>
     <div class="container columns">
-        <div class="colg">
+        <div class="colg from-left">
             <?php if($texte): echo $texte; endif;?>
             <?php if($cta): echo '<a href='.$cta['url'].' class="cta from-bottom">'.$cta['title'].'</a>'; endif;?>
         </div>

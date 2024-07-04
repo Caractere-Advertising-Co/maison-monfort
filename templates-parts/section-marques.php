@@ -15,7 +15,7 @@ $marques = get_field('marques');
                 $img = get_field('logo',$m->ID);
                 $link = get_field('lien',$m->ID);?>
 
-                <a href="<?php if($link): echo $link['url']; endif?>" target="_blank">
+                <a href="<?php if($link): echo $link['url']; endif?>" target="_blank" class="from-bottom">
                     <div class="block-img">
                         <img src="<?php echo $img['url'];?>" alt="<?php echo $img['name'];?>"/>
                     </div>
