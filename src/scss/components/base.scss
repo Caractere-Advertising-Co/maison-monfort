@@ -24,6 +24,10 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100dvh;
     background: $light;
