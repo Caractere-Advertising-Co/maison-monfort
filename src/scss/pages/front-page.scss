@@ -9,6 +9,7 @@
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                transition: all ease-in 300ms;
 
                 a{
                     text-align: center;
@@ -46,11 +47,15 @@
                 }
 
                 &:hover{
+
                     a{
                         opacity: 1;
                     }
                 }
                 
+                &:hover{
+                    transform: scale(1.5);
+                }
             }
         }
     }
