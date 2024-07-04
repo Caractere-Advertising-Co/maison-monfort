@@ -11,7 +11,7 @@
                             $title = get_sub_field('libelle');
                             $link = get_sub_field('lien');?>
 
-                            <div class="swiper-slide" style="background-image:url('<?php echo $bg['url'];?>')";>
+                            <div class="swiper-slide zoom-in" style="background-image:url('<?php echo $bg['url'];?>')";>
                                 <a href="<?php echo $link['url'];?>">
                                     <?php echo $title;?>
                                 </a>
