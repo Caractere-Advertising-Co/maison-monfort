@@ -1,9 +1,9 @@
 <?php 
 
-$bg = get_field('background-presentation');
-$texte = get_field('texte-presentation');
-$cta = get_field('cta-presentation');
-$image = get_field('image-presentation');
+$bg = get_field('background-presentation-mirror');
+$texte = get_field('texte-presentation-mirror');
+$cta = get_field('cta-presentation-mirror');
+$image = get_field('image-presentation-mirror');
 
 ?>
 
