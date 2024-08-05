@@ -29,7 +29,7 @@ $(document).ready(function () {
     data.classList.remove(direction);
   }
 
-  inView.offset(150);
+  inView.offset(180);
 
   inView(".from-left").on("enter", (el) => {
     removeMagic(el, "fade-out-left");
