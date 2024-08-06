@@ -76,11 +76,12 @@
                 .sub-menu{
                     transform: scaleY(0);
                     padding: 0;
-                    transform-origin: bottom;
+                    transform-origin: top;
                     height: 0;
-                    transition: all ease-in-out 200ms;
+                    transition: transform 200ms ease-in-out, height 200ms ease-in-out, opacity 200ms ease-in-out;
                     opacity: 0;
-                    margin-left: 50px;
+                    overflow: hidden; /* Ajouté pour éviter le débordement de contenu */
+                    margin-left: 50px; /* Conserve le même décalage de marge */
 
                     li{
                         a{
@@ -94,6 +95,17 @@
                     a{
                         &::before{
                             transform: scale(1);
+                        }
+                    }
+                }
+
+                &:hover{
+                    .li{
+                        .submenu{
+                            transform: scaleY(1);
+                            height: auto; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
+                            opacity: 1;
+                            padding: 10px 0; /* Ajustez selon vos besoins */
                         }
                     }
                 }
@@ -117,23 +129,23 @@
                 }
             }
 
-            .menu-item-has-children{
-                &:hover{
-                    .sub-menu{
-                        transform: scaleY(1);
-                        padding: 10px 0;
-                        opacity: 1;
-                        height: auto;
-                    }
+            // .menu-item-has-children{
+            //     &:hover{
+            //         .sub-menu{
+            //             transform: scaleY(1);
+            //             padding: 10px 0;
+            //             opacity: 1;
+            //             height: auto;
+            //         }
 
-                    a {
-                        &::after{
-                            content: "";
-                            transform: translate(60%, -10%) rotate(45deg);            
-                        }
-                    }
-                }
-            }
+            //         a {
+            //             &::after{
+            //                 content: "";
+            //                 transform: translate(60%, -10%) rotate(45deg);            
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
 

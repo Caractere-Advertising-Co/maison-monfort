@@ -6,4 +6,27 @@ $(document).ready(function(){
       $('.logo').toggleClass("slideLogo");
       $('#megamenu').toggleClass("open");
     });
+
+    jQuery(document).ready(function($) {
+      $(".menu-item-has-children").mouseenter(function() {
+        $(this).find(".sub-menu").css({
+          transform: "scaleY(1)",
+          height: "auto",
+          opacity: "1",
+          padding: "",
+          marginLeft: "50px"
+        });
+      });
+    
+      $(".menu-item-has-children").mouseleave(function() {
+        $(this).find(".sub-menu").css({
+          transform: "scaleY(0)",
+          height: "0",
+          opacity: "0",
+          padding: "0",
+          marginLeft: "50px"
+        });
+      });
+    });
+    
   });
