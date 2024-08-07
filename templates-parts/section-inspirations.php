@@ -2,8 +2,14 @@
 
 $titre = get_field('titre_inspirations','options');
 $galerie = get_field('galerie_inspi','options');
-$cta = get_field('cta_inspirations','options');
 
+$cta;
+
+if(is_page(242)):
+    $cta = get_field('cta_page_inspi');
+else:
+    $cta = get_field('cta_inspirations','options');
+endif;
 ?>
 
 <div id="section-inspirations">
