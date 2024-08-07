@@ -1,6 +1,6 @@
 header {
     overflow: hidden;
-    min-height: 120px;
+    min-height: 150px;
     margin-top: 20px;
     position: relative;
     z-index: 12;
@@ -12,7 +12,7 @@ header {
         gap: 0;
 
         .logo{
-            height: 100px;
+            height: 125px;
             margin-left: calc(((100% + 80px) / 2) - 95px);
             width: auto;
             transition: all ease-in-out 300ms;

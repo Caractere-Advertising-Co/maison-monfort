@@ -12,16 +12,20 @@ $cta = get_field('cta_marques');
 
         <div class="grid">
         <?php if($marques):
+            $i = 0;
             foreach($marques as $m):
-                $img = get_field('logo',$m->ID);
-                $link = get_field('lien',$m->ID);?>
+                if($i < 8):
+                    $img = get_field('logo',$m->ID);
+                    $link = get_field('lien',$m->ID);?>
 
-                <a href="<?php if($link): echo $link['url']; else: echo "#"; endif;?>" target="_blank" class="from-bottom">
-                    <div class="block-img">
-                        <img src="<?php echo $img['url'];?>" alt="<?php echo $img['name'];?>"/>
-                    </div>
-                </a>
-            <?php endforeach;
+                    <a href="<?php if($link): echo $link['url']; else: echo "#"; endif;?>" target="_blank" class="from-bottom">
+                        <div class="block-img">
+                            <img src="<?php echo $img['url'];?>" alt="<?php echo $img['name'];?>"/>
+                        </div>
+                    </a>
+                <?php endif;?>
+            <?php $i++;
+            endforeach;
         endif;?>
         </div>
 
