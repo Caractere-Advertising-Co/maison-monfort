@@ -4,11 +4,12 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 11;
+    z-index: 12;
     background-color: $dark;
     transform: translateX(100vw);
     transition: ease-in-out 300ms;
     overflow: hidden;
+    
 
     .columns{
         height: calc(100% - 180px);
