@@ -4,6 +4,7 @@ $text = get_field('texte_philo');
 $img = get_field('image_philo');
 
 $galerie = get_field('galerie_philo');
+$cta = get_field('cta_philo');
 
 ?>  
 
@@ -27,6 +28,9 @@ $galerie = get_field('galerie_philo');
 
         <div class="cold from-bottom">
             <?php if($text): echo $text; endif;?>
+            <?php if($cta):?>
+                <a href="<?php echo $cta['url'];?>"><?php echo $cta['name'];?></a>
+            <?php endif;?>
         </div>
     </div>
 </div>

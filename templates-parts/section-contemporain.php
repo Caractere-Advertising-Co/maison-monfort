@@ -1,6 +1,7 @@
 <?php 
     $galerie = get_field('galerie_section_2');
     $texte = get_field('texte_section_2');
+    $cta = get_field('cta_section_2');
 ?>
 
 <div id="section-contemporain">
@@ -21,6 +22,9 @@
     <div class="container columns">
         <div class="colg">
             <?php if($texte): echo $texte; endif;?>
+            <?php if($cta):?>
+                <a href="<?php echo $cta['url'];?>"><?php echo $cta['name'];?></a>
+            <?php endif;?>
         </div>
         <div class="cold"></div>
     </div>

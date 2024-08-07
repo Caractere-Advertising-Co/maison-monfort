@@ -26,4 +26,10 @@ $titre = get_field('titre_qualite','options');
             <?php endwhile;
         endif;?>
     </div>
+
+    <div class="container">
+        <?php if($cta):?>
+            <a href="<?php echo $cta['url'];?>"><?php echo $cta['name'];?></a>
+        <?php endif;?>
+    </div>
 </div>

@@ -1,6 +1,7 @@
 <?php 
     $galerie = get_field('galerie_section_3');
     $texte = get_field('texte_section_3');
+    $cta = get_field('cta_section_3');
 ?>
 
 <div id="section-contemporain-mirror">
@@ -22,6 +23,9 @@
         <div class="colg"></div>
         <div class="cold">
             <?php if($texte): echo $texte; endif;?>
+            <?php if($cta):?>
+                <a href="<?php echo $cta['url'];?>"><?php echo $cta['name'];?></a>
+            <?php endif;?>
         </div>
     </div>
 </div>
