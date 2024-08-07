@@ -79,13 +79,13 @@ img{
     &::before{
         content:'';
         position: absolute;
-        width: 40px;
+        width: 100%;
         height: 2px;
         bottom: 0;
         left: 0;
         transform-origin: left;
         background-color: $primary-color;
-        transform: scaleX(0);
+        transform: scaleX(0.35);
         transition: all ease-in-out 300ms;
     }
 
