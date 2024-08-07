@@ -47,6 +47,12 @@
                     }
                 }
 
+                textarea{
+                    height: 200px;
+                    min-height: 200px;
+                    max-height: 200px;
+                }
+
                 .flex-form p{
                     display: flex;
                     gap: 20px;
