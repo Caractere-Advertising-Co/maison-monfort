@@ -35,7 +35,7 @@ $cta = get_field('cta_inspiration','options');
 
     <div class="container">
         <?php if($cta):?>
-            <a href="<?php echo $cta['url'];?>"><?php echo $cta['name'];?></a>
+            <a href="<?php echo $cta['url'];?>" class="cta"><?php echo $cta['name'];?></a>
         <?php endif;?>
     </div>
 </div>

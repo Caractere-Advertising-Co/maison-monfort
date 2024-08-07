@@ -23,7 +23,7 @@
         <div class="colg">
             <?php if($texte): echo $texte; endif;?>
             <?php if($cta):?>
-                <a href="<?php echo $cta['url'];?>"><?php echo $cta['name'];?></a>
+                <a href="<?php echo $cta['url'];?>" class="cta"><?php echo $cta['name'];?></a>
             <?php endif;?>
         </div>
         <div class="cold"></div>
