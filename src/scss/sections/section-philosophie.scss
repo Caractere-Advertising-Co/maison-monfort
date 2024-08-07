@@ -11,6 +11,7 @@
         height: 550px;
         width: 75vw;
         margin-left: 0;
+        position: relative;
 
         .swiper-button-next-philo,
         .swiper-button-prev-philo{
@@ -18,9 +19,9 @@
             height: 50px;
             background-color: $primary-color;
             top: auto;
-            left: auto;
-            right: 23vw;
+            left: calc(50vw - 50px);
             bottom: 0;
+            position: absolute;
             
             &::after{
                 font-size: .8rem;
@@ -30,7 +31,8 @@
 
         .swiper-button-prev-philo{
             background-color: $light;
-            right: calc(23vw + 50px);
+            left: calc(50vw - 100px);
+            position: absolute;
 
             &::after{
                 font-size: .8rem;
@@ -44,6 +46,7 @@
         position: relative;
         z-index: 10;
         pointer-events: none;
+        gap: 0;
 
         .cold{
             background-color: $dark-dark-gray;
