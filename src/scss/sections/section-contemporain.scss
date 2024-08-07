@@ -12,7 +12,7 @@
             height: 50px;
             background-color: $primary-color;
             top: auto;
-            left: 10vw;
+            left: calc(50vw - 100px);
             bottom: 0;
                 
             &::after{
@@ -23,7 +23,7 @@
     
         .swiper-button-next-contempo{
             background-color: $light;
-            left: calc( 10vw + 50px);
+            left: calc( 50vw - 50px);
     
             &::after{
                 font-size: .8rem;
@@ -40,12 +40,12 @@
 
         .colg{
             background-color: $light;
-            width: calc( 60% - 80px);
+            width: calc( 50% - 80px);
             padding: 50px 80px 50px 0;
         }
 
         .cold{
-            width: 40%;
+            width: 50%;
         }
     }
 }
@@ -64,8 +64,8 @@
             height: 50px;
             background-color: $primary-color;
             top: auto;
-            left: auto;
-            right: 10vw;
+            left: 0;
+            right: calc(50vw - 100px);
             bottom: 0;
                 
             &::after{
@@ -76,7 +76,7 @@
     
         .swiper-button-prev-contempo-mirror{
             background-color: $light;
-            right: calc( 10vw + 50px);
+            right: calc( 50vw - 50px);
             left: auto;
     
             &::after{
@@ -93,12 +93,12 @@
         pointer-events: none;
 
         .colg{
-            width: 40%;
+            width: 50%;
         }
 
         .cold{
             background-color: $light;
-            width: calc( 60% - 80px);
+            width: calc( 50% - 80px);
             padding: 50px 0 50px 80px;
         }
     }
