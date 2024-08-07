@@ -5,6 +5,7 @@
         height: 700px;
         width: calc(50% + 100px);
         margin-right: 0;
+        position: relative;
     
         .swiper-button-next-contempo,
         .swiper-button-prev-contempo{
@@ -12,8 +13,9 @@
             height: 50px;
             background-color: $primary-color;
             top: auto;
-            left: calc(50vw - 100px);
+            left: calc(50vw - 50px);
             bottom: 0;
+            position: absolute;
                 
             &::after{
                 font-size: .8rem;
@@ -23,7 +25,7 @@
     
         .swiper-button-next-contempo{
             background-color: $light;
-            left: calc( 50vw - 50px);
+            left: calc( 50vw - 100px);
     
             &::after{
                 font-size: .8rem;
@@ -37,6 +39,7 @@
         z-index: 11;
         position: relative;
         pointer-events: none;
+        gap: 0;
 
         .colg{
             background-color: $light;
@@ -57,6 +60,7 @@
         height: 700px;
         width: calc(50% + 100px);
         margin-left: 0;
+        position: relative;
     
         .swiper-button-next-contempo-mirror,
         .swiper-button-prev-contempo-mirror{
@@ -64,8 +68,9 @@
             height: 50px;
             background-color: $primary-color;
             top: auto;
-            left: 0;
-            right: calc(50vw - 100px);
+            right: calc(50vw - 50px);
+            left: auto;
+            position: absolute;
             bottom: 0;
                 
             &::after{
@@ -76,11 +81,11 @@
     
         .swiper-button-prev-contempo-mirror{
             background-color: $light;
-            right: calc( 50vw - 50px);
+            right: calc( 50vw - 100px);
             left: auto;
+            position: absolute;
     
             &::after{
-                font-size: .8rem;
                 color : $middle-gray;
             }
         }
@@ -91,6 +96,7 @@
         z-index: 11;
         position: relative;
         pointer-events: none;
+        gap: 0;
 
         .colg{
             width: 50%;
