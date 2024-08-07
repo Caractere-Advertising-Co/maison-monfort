@@ -13,7 +13,8 @@
             height: 50px;
             background-color: $primary-color;
             top: auto;
-            left: calc(50vw - 50px);
+            left: auto;
+            right: calc(50vw - 50px);
             bottom: 0;
             position: absolute;
                 
@@ -25,7 +26,7 @@
     
         .swiper-button-next-contempo{
             background-color: $light;
-            left: calc( 50vw - 100px);
+            right: calc( 50vw - 100px);
     
             &::after{
                 font-size: .8rem;
@@ -68,8 +69,8 @@
             height: 50px;
             background-color: $primary-color;
             top: auto;
-            right: calc(50vw - 50px);
-            left: auto;
+            left: calc(50vw - 50px);
+            right: auto;
             position: absolute;
             bottom: 0;
                 
@@ -81,8 +82,8 @@
     
         .swiper-button-prev-contempo-mirror{
             background-color: $light;
-            right: calc( 50vw - 100px);
-            left: auto;
+            left: calc( 50vw - 100px);
+            right: auto;
             position: absolute;
     
             &::after{
