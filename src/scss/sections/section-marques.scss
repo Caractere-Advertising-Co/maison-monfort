@@ -21,11 +21,16 @@
                 border-left: 1px solid $light-gray;
                 width: 60%;
                 padding: 0 20%;
+                filter: saturate(0);
                 
                 
                 &:last-child,
                 &:nth-child(4){
                     border-right: 1px solid $light-gray;
+                }
+
+                &:hover{
+                    filter: saturate(1);
                 }
             }
             
