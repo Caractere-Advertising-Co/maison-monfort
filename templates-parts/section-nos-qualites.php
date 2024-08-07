@@ -1,7 +1,7 @@
 <?php 
 
 $titre = get_field('titre_qualite','options');
-$cta = get_field('cta_qualite','options');
+$cta = get_field('cta_qualites','options');
 ?>
 
 <div id="section-nos-qualites">

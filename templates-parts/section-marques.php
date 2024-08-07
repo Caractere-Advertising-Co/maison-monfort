@@ -2,6 +2,7 @@
 
 $titre = get_field('titre-marque');
 $marques = get_field('marques');
+$cta = get_field('cta_marques');
 
 ?>
 
@@ -23,6 +24,9 @@ $marques = get_field('marques');
             <?php endforeach;
         endif;?>
         </div>
+
+        <?php if($cta): echo '<a href='.$cta['url'].' class="cta from-bottom">'.$cta['title'].'</a>'; endif;?>
+
     </div>
 </div>
 

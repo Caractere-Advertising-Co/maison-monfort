@@ -2,7 +2,7 @@
 
 $titre = get_field('titre_inspirations','options');
 $galerie = get_field('galerie_inspi','options');
-$cta = get_field('cta_inspiration','options');
+$cta = get_field('cta_inspirations','options');
 
 ?>
 
