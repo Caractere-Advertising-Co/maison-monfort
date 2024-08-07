@@ -1,9 +1,11 @@
 #hero{
-    height: 750px;
+    height: 70vh;
+    min-height: 750px;
     position: relative;
 
     .swiper-hero{
-        height: 750px;
+        height: 70vh;
+        min-height: 750px;
 
         .swiper-wrapper{
             .swiper-slide{
@@ -65,7 +67,7 @@
 
         padding:40px 20px;
         position: absolute;
-        left: -2vw;
+        left: 2.5vw;
         top: calc(50% - 50px);
 
         &::after{
@@ -74,7 +76,7 @@
     }
 
     .swiper-button-next{
-        right: -2vw;
+        right: 2.5vw;
         left: auto;
     }
 }
