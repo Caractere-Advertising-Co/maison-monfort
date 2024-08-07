@@ -19,7 +19,7 @@ $cta = get_field('cta_showroom','options');
 
         <div class="cold from-bottom">
             <?php if($texte): echo $texte; endif;?>
-            <?php if($cta): echo "<a href=\"".$cta['url']."\" class=\"cta\">".$cta['name']."</a>"; endif;?>
+            <?php if($cta): echo "<a href=\"".$cta['url']."\" class=\"cta\">".$cta['title']."</a>"; endif;?>
         </div>
     </div>
 </div>
