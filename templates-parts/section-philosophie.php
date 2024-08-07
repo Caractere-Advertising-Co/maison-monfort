@@ -19,15 +19,12 @@ $cta = get_field('cta_philo');
                 <?php endforeach;
             endif;?>
         </div>
+        <div class="swiper-button-prev swiper-button-prev-philo"></div>
+        <div class="swiper-button-next swiper-button-next-philo"></div>
     </div>
     
     <div class="container columns">
-        <div class="colg">
-            <div class="swiper">
-                <div class="swiper-button-prev swiper-button-prev-philo"></div>
-                <div class="swiper-button-next swiper-button-next-philo"></div>
-            </div>
-        </div>
+        <div class="colg"></div>
 
         <div class="cold from-bottom">
             <?php if($text): echo $text; endif;?>
