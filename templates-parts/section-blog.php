@@ -37,13 +37,14 @@ $news = new WP_Query($args);?>
 
         wp_reset_postdata();
     ?>
+    </div>
+    <div class="container">
+        <?php if(is_front_page(  )):
+            $cta = get_field('cta_blog');
 
-    <?php if(is_front_page(  )):
-        $cta = get_field('cta_blog');
-
-        if($cta):?>
-            <a href="<?php echo $cta['url'];?>" class="cta ctaSeeMoreBlog"><?php echo $cta['title'];?></a>
-        <?php endif;
-    endif;?>
+            if($cta):?>
+                <a href="<?php echo $cta['url'];?>" class="cta ctaSeeMoreBlog"><?php echo $cta['title'];?></a>
+            <?php endif;
+        endif;?>
     </div>
 </div>
