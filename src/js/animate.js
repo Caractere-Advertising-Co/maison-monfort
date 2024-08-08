@@ -117,3 +117,14 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+/* Voir plus de marques */
+
+var seeMoreBtn = document.getElementsByClassName('moreMarques');
+
+for(let element of seeMoreBtn){
+  element.addEventListener('click', function(){
+    console.log(click);
+  })
+}

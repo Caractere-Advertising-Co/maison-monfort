@@ -72,10 +72,12 @@ footer {
             font-size: .8rem;
             margin-bottom: 0;
             color: $light;
+            line-height: 1.3rem;
           }
 
           table{
             width: 100%;
+            border-collapse: collapse;
 
             td{
               &:nth-child(2){

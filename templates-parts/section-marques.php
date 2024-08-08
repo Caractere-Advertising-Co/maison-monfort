@@ -29,7 +29,7 @@ $cta = get_field('cta_marques');
         endif;?>
         </div>
 
-        <?php if($cta): echo '<a href='.$cta['url'].' class="cta from-bottom">'.$cta['title'].'</a>'; endif;?>
+        <?php if($cta): echo '<a href="'.$cta['url'].'" class="cta from-bottom moreMarques">'.$cta['title'].'</a>'; endif;?>
 
     </div>
 </div>
