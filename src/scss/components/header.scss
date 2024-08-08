@@ -43,6 +43,10 @@ header {
             .hamburger:hover{
                 cursor: pointer;
             }
+
+            #hamburger-12.is-active .line{
+                background-color: $light;
+            }
         
             #hamburger-12.is-active .line:nth-child(1){
                 background-color: $primary-color;
