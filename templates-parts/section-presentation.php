@@ -21,7 +21,7 @@ $image = get_field('image-presentation');
                 <?php if($image):?>
                     <img src="<?php echo $image['url'];?>" alt="<?php echo $image['title'];?>" />
                 <?php endif;?>
-            </div>
+            </div>  
         </div>
     </div>
 </div>
