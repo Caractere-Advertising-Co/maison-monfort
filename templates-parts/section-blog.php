@@ -38,7 +38,7 @@ $news = new WP_Query($args);?>
         wp_reset_postdata();
     ?>
     </div>
-    <div class="container">
+    <div class="container cont_seemore">
         <?php if(is_front_page(  )):
             $cta = get_field('cta_blog');
 
