@@ -6,6 +6,12 @@
         width: calc(50% + 100px);
         margin-right: 0;
         position: relative;
+
+        .swiper-wrapper{
+            .swiper-slide{
+                height: 700px;
+            }
+        }
     
         .swiper-button-next-contempo,
         .swiper-button-prev-contempo{
@@ -62,6 +68,12 @@
         width: calc(50% + 100px);
         margin-left: 0;
         position: relative;
+
+        .swiper-wrapper{
+            .swiper-slide{
+                height: 700px;
+            }
+        }
     
         .swiper-button-next-contempo-mirror,
         .swiper-button-prev-contempo-mirror{
