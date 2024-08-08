@@ -42,7 +42,7 @@ $news = new WP_Query($args);?>
         $cta = get_field('cta_blog');
 
         if($cta):?>
-            <a href="<?php echo $cta['url'];?>" class="cta"><?php echo $cta['title'];?></a>
+            <a href="<?php echo $cta['url'];?>" class="cta ctaSeeMoreBlog"><?php echo $cta['title'];?></a>
         <?php endif;
     endif;?>
     </div>

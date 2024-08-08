@@ -101,9 +101,11 @@ img{
 }
 
 #section-nos-qualites,
-#section-inspirations{
+#section-inspirations
+#section-blog{
     .container{
-        .cta{
+        .cta,
+        .ctaSeeMoreBlog{
             margin:auto;
             padding: 10px 50px;
             border: 1px solid $primary-color;
