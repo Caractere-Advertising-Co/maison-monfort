@@ -1,5 +1,6 @@
 <?php 
 
+$actif = get_field('actif-presentation-mirror');
 $bg = get_field('background-presentation-mirror');
 $texte = get_field('texte-presentation-mirror');
 $cta = get_field('cta-presentation-mirror');
@@ -7,6 +8,7 @@ $image = get_field('image-presentation-mirror');
 
 ?>
 
+<?php if($actif):?>
 <div id="section-presentation-mirror" class="from-left">
     <div class="block-img background">
         <?php if($bg):?><img src="<?php echo $bg['url'];?>" alt="<?php echo $bg['name'];?>" /><?php endif;?>
@@ -25,3 +27,4 @@ $image = get_field('image-presentation-mirror');
         </div>
     </div>
 </div>
+<?php endif;?>
