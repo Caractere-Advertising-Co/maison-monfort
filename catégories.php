@@ -10,6 +10,7 @@ get_header();?>
 <?php get_template_part( 'templates-parts/section-contemporain');?>
 <?php get_template_part( 'templates-parts/section-nos-qualites');?>
 <?php get_template_part( 'templates-parts/section-showroom');?>
+<?php get_template_part( 'templates-parts/section-inspirations');?>
 <?php get_template_part( 'templates-parts/section-marques');?>
 <?php get_template_part( 'templates-parts/section-contact');?>
 
