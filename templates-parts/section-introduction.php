@@ -8,7 +8,7 @@ $img = get_field('image_introduction');
 
 ?>
 
-<?php if($titre || $descr_para_1 | $description): ?>
+<?php if($titre || $descr_para_1 || $description): ?>
 
 <div id="section-introduction">
     <div class="container columns">
