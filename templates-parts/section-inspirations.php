@@ -5,7 +5,7 @@ $titre = get_field('titre_inspirations','options');
 $galerie;
 $cta;
 
-if(is_front_page(  )):
+if(is_front_page(  ) || is_page(242)):
     $galerie = get_field('galerie_inspi','options');
 else :
     $galerie = get_field('galerie_inspirations');
