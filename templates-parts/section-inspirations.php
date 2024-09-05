@@ -2,7 +2,7 @@
 
 $titre = get_field('titre_inspirations','options');
 
-$galerie;
+$galerie = [];
 $cta;
 $length = [];
 
