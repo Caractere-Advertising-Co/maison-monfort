@@ -4,6 +4,7 @@
     position: relative;
     margin: 50px auto;
     background-size: cover;
+    background-position: center;
 
     .container{
         position: absolute;
@@ -15,6 +16,10 @@
             background-color: $light;
             padding: 80px 50px;
             width: calc(50% - 100px);
+            
+            p{
+                text-align: left;
+            }
         }
     }
 }
