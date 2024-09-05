@@ -24,52 +24,44 @@ $(document).ready(function () {
     data.classList.add(direction);
   }
 
-  function removeMagic(data, direction) {
-    data.classList.add("invisible");
-    data.classList.remove(direction);
-  }
+  // function removeMagic(data, direction) {
+  //   data.classList.add("invisible");
+  //   data.classList.remove(direction);
+  // }
 
   inView.offset(180);
 
   inView(".from-left").on("enter", (el) => {
-    removeMagic(el, "fade-out-left");
     makeMagic(el, "fade-in-left");
   });
 
   inView(".from-right").on("enter", (el) => {
-    removeMagic(el, "fade-out-right");
     makeMagic(el, "fade-in-right");
   });
 
   inView(".from-bottom").on("enter", (el) => {
-    removeMagic(el, "fade-out-bottom");
     makeMagic(el, "fade-in-bottom");
   });
 
   inView(".from-top").on("enter", (el) => {
-    removeMagic(el, "fade-out-top");
     makeMagic(el, "fade-in-top");
   });
 
 
   inView(".from-left").on("exit", (el) => {
     removeMagic(el, "fade-in-left");
-    makeMagic(el, "fade-out-left");
   });
 
   inView(".from-right").on("exit", (el) => {
     removeMagic(el, "fade-in-right");
-    makeMagic(el, "fade-out-right");
   });
 
   inView(".from-bottom").on("exit", (el) => {
     removeMagic(el, "fade-in-bottom");
-    makeMagic(el, "fade-out-bottom");
   });
 
   inView(".from-top").on("exit", (el) => {
     removeMagic(el, "fade-in-top");
-    makeMagic(el, "fade-out-top");
   });
 
   /* ANIMATION NUMBER */
