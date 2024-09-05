@@ -46,12 +46,14 @@
         margin-top: -380px;
         z-index: 11;
         position: relative;
+        pointer-events: none;
         gap: 0;
 
         .colg{
             background-color: $light;
             width: calc( 50% - 80px);
             padding: 50px 80px 50px 0;
+            pointer-events: all;
         }
 
         .cold{
@@ -109,6 +111,7 @@
         margin-top: -380px;
         z-index: 11;
         position: relative;
+        pointer-events: none;
         gap: 0;
 
         .colg{
@@ -119,6 +122,7 @@
             background-color: $light;
             width: calc( 50% - 80px);
             padding: 50px 0 50px 80px;
+            pointer-events: all;
         }
     }
 }
