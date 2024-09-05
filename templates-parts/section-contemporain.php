@@ -5,7 +5,7 @@
     $cta = get_field('cta_section_2');
 ?>
 
-<?php if($actif):?>
+<?php if($actif):?> 
     <div id="section-contemporain">
         <div class="swiper swiper-contempo">
             <div class="swiper-wrapper">

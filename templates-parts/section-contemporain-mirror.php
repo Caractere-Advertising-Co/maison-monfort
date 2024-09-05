@@ -24,8 +24,9 @@
         <div class="container columns">
             <div class="colg"></div>
             <div class="cold">
-                <?php if($texte): echo $texte; endif;?>
-                <?php if($cta):?>
+                <?php 
+                if($texte): echo $texte; endif;
+                if($cta):?>
                     <a href="<?php echo $cta['url'];?>" class="cta"><?php echo $cta['title'];?></a>
                 <?php endif;?>
             </div>

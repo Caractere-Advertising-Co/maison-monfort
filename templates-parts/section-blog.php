@@ -11,9 +11,11 @@ $args = array(
 $news = new WP_Query($args);?>
 
 <div id="section-blog">
-    <div class="container">
-        <h2>Actualités</h2>
-    </div>
+    <?php if(!is_page(290)): ?>
+        <div class="container">
+            <h2>Actualités</h2>
+        </div>
+    <?php endif;?>
     <div class="container columns">
         <?php if($news->have_posts()):
             while($news->have_posts()): $news->the_post();
