@@ -1,9 +1,15 @@
 <?php 
 
 $titre = get_field('titre_inspirations','options');
-$galerie = get_field('galerie_inspi','options');
 
+$galerie;
 $cta;
+
+if(is_front_page(  )):
+    $galerie = get_field('galerie_inspi','options');
+else :
+    $galerie = get_field('galerie_inspirations');
+endif;
 
 if(is_page(242)):
     $cta = get_field('cta_page_inspi');
