@@ -14,7 +14,7 @@ $cta = get_field('cta_marques');
         <?php if($marques):
             $i = 0;
             foreach($marques as $m):
-                if($i < 8):
+                // if($i < 8):
                     $img = get_field('logo',$m->ID);
                     $link = get_field('lien',$m->ID);?>
 
@@ -23,8 +23,8 @@ $cta = get_field('cta_marques');
                             <img src="<?php echo $img['url'];?>" alt="<?php echo $img['name'];?>"/>
                         </div>
                     </a>
-                <?php endif;?>
-            <?php $i++;
+                <?php /*endif;
+                $i++;*/
             endforeach;
         endif;?>
         </div>
