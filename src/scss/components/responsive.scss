@@ -21,7 +21,7 @@
     font-size: 2rem;
     line-height: 2.3rem;
     font-weight: 300;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 
   p{
@@ -211,9 +211,6 @@
 
       .colg{
 
-        h2{
-          margin-bottom: 0;
-
           strong{
             color:$primary-color;
           }
@@ -260,8 +257,8 @@
           }
         }
       }
-    }
   }
+  
 
   #section-nos-qualites{
     .container{
