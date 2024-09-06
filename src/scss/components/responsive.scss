@@ -206,7 +206,7 @@
         padding-top: 0px;
 
         p + p {
-          margin-bottom: 50px;
+          margin-bottom: 20px;
         }
 
         .cta{
@@ -276,6 +276,10 @@
         background-color: $light;
         padding: 30px;
         width: calc(100% - 60px)!important;
+
+        p + p {
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -474,6 +478,10 @@
             p{
                 margin: 50px 0;
             }
+
+            p + p {
+              margin-bottom: 20px;
+            }
         }
     }
   }
@@ -500,6 +508,10 @@
 
               p{
                   margin: 50px 0;
+              }
+
+              p + p {
+                margin-bottom: 20px;
               }
           }
       }
