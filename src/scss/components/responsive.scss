@@ -211,8 +211,12 @@
       flex-direction: column;
 
       .colg{
-        strong{
-          color:$primary-color;
+        h2{
+          margin-bottom: 0;
+
+          strong{
+            color:$primary-color;
+          }
         }
       }
       
