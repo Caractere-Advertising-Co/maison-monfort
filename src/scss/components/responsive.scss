@@ -203,6 +203,24 @@
 
   // FRONT PAGE
 
+  #hero{
+    height: 65vh;
+    min-height: 550px;
+    position: relative;
+    margin-bottom: 100px;
+
+    .swiper-hero {
+      height: 65vh;
+      min-height: 550px;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+      padding: 25px 10px;
+      top: calc(50% - 25px);
+    }
+  }
+
   #section-introduction{
     padding: 0px;
     margin-top: -50px;
