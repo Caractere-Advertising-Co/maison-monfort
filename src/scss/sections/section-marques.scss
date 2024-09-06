@@ -17,10 +17,12 @@
             flex-wrap: wrap;
             //grid-template-columns: repeat(4, 1fr);
             row-gap: 50px;
+            justify-content: center;
 
             a{
                 flex: 1 0 21%;
-                
+                max-width: 25%;
+
                 .block-img{
                     border-left: 1px solid $light-gray;
                     width: 60%;
