@@ -37,9 +37,6 @@
     height: 120px;
     min-height: 120px;
 
-    .container{
-      margin-left: 0;
-
       .logo{
         height: 100px !important;
         min-width: auto;
@@ -48,7 +45,6 @@
           object-fit: contain;
         }
       }
-    }
   }
   
   footer {
@@ -391,6 +387,8 @@
     }
 
     .container{
+
+      margin-left: 0;
       .colg{
         width: calc( 100% - 40px) !important;
         padding: 20px;
