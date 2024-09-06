@@ -210,9 +210,10 @@
       flex-direction: column;
 
       .colg{
+
         h2{
           margin-bottom: 0;
-          
+
           strong{
             color:$primary-color;
           }
@@ -224,6 +225,7 @@
 
         p + p {
           margin-bottom: 20px;
+          margin-top: 0;
         }
 
         .cta{
@@ -296,6 +298,7 @@
 
         p + p {
           margin-bottom: 20px;
+          margin-top: 0;
         }
       }
     }
@@ -500,6 +503,7 @@
 
             p + p {
               margin-bottom: 20px;
+              margin-top: 0;
             }
         }
     }
