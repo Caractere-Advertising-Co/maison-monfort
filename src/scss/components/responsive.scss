@@ -265,7 +265,6 @@
     }
   }
   
-
   #section-nos-qualites{
     .container{
       h2{
@@ -564,6 +563,14 @@
   .page-template-contact{
     #section-introduction{
       padding: 0;
+    }
+  }
+
+  #section-philosophie{
+    .container{
+      .cold{
+        width: calc(100% - 100px) !important;
+      }
     }
   }
 }
