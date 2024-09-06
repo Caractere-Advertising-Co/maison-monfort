@@ -22,7 +22,7 @@
     height: 120px;
     
     .logo{
-      height: 100px;
+      height: 100px !important;
       min-width: auto;
 
       img{
@@ -353,7 +353,7 @@
   
   #section-header{
     .block-img{
-      height: 450px;
+      height: 450px !important;
     }
 
     .container{
