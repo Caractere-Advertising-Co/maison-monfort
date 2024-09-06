@@ -369,8 +369,12 @@
         .grid{
             padding: 50px 0;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             row-gap: 50px;
+
+            a{
+              width: 100%;
+            }
         }
     }
   }
