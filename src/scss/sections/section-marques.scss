@@ -13,27 +13,31 @@
 
         .grid{
             padding: 50px 0;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            flex-wrap: wrap;
+            //grid-template-columns: repeat(4, 1fr);
             row-gap: 50px;
 
-            .block-img{
-                border-left: 1px solid $light-gray;
-                width: 60%;
-                padding: 0 20%;
-                filter: saturate(0);
+            a{
+                flex: 1 0 21%;
                 
-                
-                &:last-child,
-                &:nth-child(4){
-                    border-right: 1px solid $light-gray;
+                .block-img{
+                    border-left: 1px solid $light-gray;
+                    width: 60%;
+                    padding: 0 20%;
+                    filter: saturate(0);
+                    
+                    
+                    &:last-child,
+                    &:nth-child(4){
+                        border-right: 1px solid $light-gray;
+                    }
+    
+                    &:hover{
+                        filter: saturate(1);
+                    }
                 }
-
-                &:hover{
-                    filter: saturate(1);
-                }
-            }
-            
+            }            
         }
 
         .cta{
