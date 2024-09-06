@@ -210,12 +210,11 @@
       flex-direction: column;
 
       .colg{
-
-          strong{
-            color:$primary-color;
-          }
+        strong{
+          color:$primary-color;
         }
       }
+      
 
       .cold{
         padding-top: 0px;
@@ -257,6 +256,7 @@
           }
         }
       }
+    }
   }
   
 
@@ -493,6 +493,10 @@
             background-color: $light;
             width: calc(100% - 60px) !important;
             padding: 30px;
+
+            p{
+              margin: 0;
+            }
 
             p + p {
               margin-bottom: 20px;
