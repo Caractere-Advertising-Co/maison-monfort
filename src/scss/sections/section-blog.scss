@@ -46,5 +46,11 @@
 
     .cont_seemore{
         margin:50px auto;
+
+        .ctaSeeMoreBlog{
+            background: $primary-color;
+            color: $light;
+            font-weight: 400;
+        }
     }
 }
