@@ -94,6 +94,8 @@
                 }
 
                 .wpcf7-acceptance{
+                    margin: 0;
+
                     label{
                         display: flex;
                         gap: 10px;
@@ -108,8 +110,13 @@
                         .wpcf7-list-item-label{
                             font-size: .7rem;
                             line-height: 1rem;
+                            color: $dark-dark-gray;
                         }
                     }
+                }
+
+                .disclaimer{
+                    line-height: 1rem !important;
                 }
             }
         }
