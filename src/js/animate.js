@@ -130,11 +130,11 @@ window.addEventListener('scroll', function() {
   var image = new Image();
   image.src = imageSrc;
 
+  // Calculer la hauteur de l'image après le chargement
   image.onload = function () {
-    var width = image.width,
-      height = image.height;
-    //alert('width =' + width + ', height = ' + height);
-  };
+    var imageHeight = image.height;
 
-  separator.style.backgroundPositionY = height -(scrollPosition * 0.3) + 'px'; // Ajuster la vitesse
+    // Ajuster la position du background en fonction du défilement et de la hauteur de l'image
+    separator.style.backgroundPositionY = (imageHeight - (scrollPosition * 0.3)) + 'px'; // Ajuster la vitesse du parallax
+  };
 });
