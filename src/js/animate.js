@@ -124,5 +124,17 @@ for(let element of seeMoreBtn){
 window.addEventListener('scroll', function() {
   var separator = document.querySelector('.separator');
   var scrollPosition = window.scrollY; // Utilisation de scrollY à la place de pageYOffset
-  separator.style.backgroundPositionY = -(scrollPosition * 0.3) + 'px'; // Ajuster la vitesse
+
+  var imageSrc = separator.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
+
+  var image = new Image();
+  image.src = imageSrc;
+
+  image.onload = function () {
+    var width = image.width,
+      height = image.height;
+    alert('width =' + width + ', height = ' + height);
+  };
+
+  separator.style.backgroundPositionY = height -(scrollPosition * 0.3) + 'px'; // Ajuster la vitesse
 });
