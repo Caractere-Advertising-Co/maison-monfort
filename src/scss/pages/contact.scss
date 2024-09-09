@@ -95,18 +95,19 @@
 
                 .wpcf7-acceptance{
                     label{
-                        display: inline;
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 40px;
 
                         input{
-                            width: 15px;
-                            display: inline;
+                            width: 15px !important;
+                            min-width: 15px !important;
+                            max-width: 15px !important;
                         }
 
                         .wpcf7-list-item-label{
-                            display: inline;
-                            font-size: .8rem;
-                            line-height: .6rem;
-                        
+                            font-size: .7rem;
+                            line-height: 1rem;
                         }
                     }
                 }
