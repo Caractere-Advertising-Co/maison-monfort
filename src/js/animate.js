@@ -133,7 +133,7 @@ window.addEventListener('scroll', function() {
   image.onload = function () {
     var width = image.width,
       height = image.height;
-    alert('width =' + width + ', height = ' + height);
+    //alert('width =' + width + ', height = ' + height);
   };
 
   separator.style.backgroundPositionY = height -(scrollPosition * 0.3) + 'px'; // Ajuster la vitesse
