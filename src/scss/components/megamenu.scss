@@ -73,7 +73,7 @@
                 .sub-menu{
                     transform-origin: top;
                     max-height: 0;
-                    transition: max-height ease-in 200ms;
+                    transition: max-height ease-in 200ms, opacity ease-in 300ms;
                     opacity: 0;
                     overflow: hidden; /* Ajouté pour éviter le débordement de contenu */
                     margin-left: 50px; /* Conserve le même décalage de marge */
@@ -93,9 +93,10 @@
                     a{
                         letter-spacing: 3px;
                     }
-                    
+
                     .sub-menu{
                         max-height: 150px; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
+                        opacity: 1;
                     }
                 }
             }
