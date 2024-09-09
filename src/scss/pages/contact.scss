@@ -96,27 +96,34 @@
                 .wpcf7-acceptance{
                     margin: 0;
 
-                    label{
-                        display: flex;
-                        gap: 10px;
-                        margin-bottom: 40px;
+                    span{
+                        margin: 0;
 
-                        input{
-                            width: 15px !important;
-                            min-width: 15px !important;
-                            max-width: 15px !important;
-                        }
-
-                        .wpcf7-list-item-label{
-                            font-size: .7rem;
-                            line-height: 1rem;
-                            color: $dark-dark-gray;
+                        label{
+                            display: flex;
+                            gap: 10px;
+                            margin-bottom: 0px;
+    
+                            input{
+                                width: 15px !important;
+                                min-width: 15px !important;
+                                max-width: 15px !important;
+                            }
+    
+                            .wpcf7-list-item-label{
+                                font-size: .7rem;
+                                line-height: 1rem;
+                                color: $dark-dark-gray;
+                            }
                         }
                     }
+                    
                 }
 
                 .disclaimer{
-                    line-height: 1rem !important;
+                    line-height: .6rem !important;
+                    margin-bottom: 40px;
+                    font-size: .7rem;
                 }
             }
         }
