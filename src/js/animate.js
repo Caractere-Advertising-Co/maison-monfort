@@ -135,6 +135,6 @@ window.addEventListener('scroll', function() {
     var imageHeight = image.height;
 
     // Ajuster la position du background en fonction du défilement et de la hauteur de l'image
-    separator.style.backgroundPositionY = (imageHeight - (scrollPosition * 0.3)) + 'px'; // Ajuster la vitesse du parallax
+    separator.style.backgroundPositionY = ((imageHeight /2) - (scrollPosition * 0.3)) + 'px'; // Ajuster la vitesse du parallax
   };
 });
