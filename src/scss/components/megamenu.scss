@@ -90,12 +90,12 @@
 
                 &:hover{
 
-                    .li{
+                    a{
                         letter-spacing: 3px;
-
-                        .sub-menu{
-                            max-height: 150px; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
-                        }
+                    }
+                    
+                    .sub-menu{
+                        max-height: 150px; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
                     }
                 }
             }
