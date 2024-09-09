@@ -120,13 +120,6 @@
 
             .menu-item-has-children{
                 &:hover{
-                    .sub-menu{
-                        transform: scaleY(1);
-                        padding: 10px 0;
-                        opacity: 1;
-                        height: auto;
-                    }
-
                     a {
                         &::after{
                             content: "";
