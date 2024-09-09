@@ -11,7 +11,7 @@ $(document).ready(function(){
       $(".menu-item-has-children").mouseenter(function() {
         $(this).find(".sub-menu").css({
           transform: "scaleY(1)",
-          height: "auto",
+          maxHeight: "400",
           opacity: "1",
           padding: "",
           marginLeft: "50px"
