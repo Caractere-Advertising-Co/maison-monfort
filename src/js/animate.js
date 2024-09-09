@@ -120,3 +120,9 @@ for(let element of seeMoreBtn){
     console.log(click);
   })
 }
+
+window.addEventListener('scroll', function() {
+  var separator = document.querySelector('.separator');
+  var scrollPosition = window.pageYOffset;
+  separator.style.backgroundPositionY = -(scrollPosition * 0.5) + 'px'; // Ajuster la vitesse
+});

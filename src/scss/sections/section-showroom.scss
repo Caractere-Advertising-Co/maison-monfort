@@ -1,16 +1,28 @@
 #section-showroom{
-    .separator{
+    // .separator{
+    //     width: 100vw;
+    //     height: 300px;
+    //     overflow: hidden;
+    //     z-index: 1;
+    //     position: relative;
+
+    //     background-attachment: fixed;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+
+    .separator {
         width: 100vw;
         height: 300px;
         overflow: hidden;
         z-index: 1;
         position: relative;
-
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
 
     .container{
         padding: 100px 0;
