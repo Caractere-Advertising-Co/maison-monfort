@@ -29,10 +29,19 @@
         grid-auto-flow: dense;
 
         a{
+            overflow: hidden;
+            
             &:nth-child(odd),
             &:nth-child(8n+4),
             &:nth-child(12n+6){
                 grid-row: span 2;
+            }
+
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                    filter: brightness(.9);
+                }
             }
         }
     }
