@@ -111,7 +111,7 @@
 
                         .submenu{
                             transform: scaleY(1);
-                            height: auto; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
+                            max-height: 150px; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
                             opacity: 1;
                             padding: 10px 0; /* Ajustez selon vos besoins */
                         }
