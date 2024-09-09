@@ -98,10 +98,10 @@
                             transform: scale(1);
                         }
                     }
-                }
 
-                &:hover{
                     .li{
+                        letter-spacing: 3px;
+                        
                         .submenu{
                             transform: scaleY(1);
                             height: auto; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
