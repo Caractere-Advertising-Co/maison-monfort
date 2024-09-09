@@ -30,7 +30,11 @@
 
         a{
             overflow: hidden;
-            
+
+            img{
+                transform: scale(1);
+            }
+
             &:nth-child(odd),
             &:nth-child(8n+4),
             &:nth-child(12n+6){
@@ -40,7 +44,7 @@
             &:hover{
                 img{
                     transform: scale(1.2);
-                    filter: brightness(.9);
+                    filter: brightness(.7);
                 }
             }
         }
