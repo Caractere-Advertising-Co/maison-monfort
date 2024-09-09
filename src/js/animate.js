@@ -121,20 +121,20 @@ for(let element of seeMoreBtn){
   })
 }
 
-window.addEventListener('scroll', function() {
-  var separator = document.querySelector('.separator');
-  var scrollPosition = window.scrollY; // Utilisation de scrollY à la place de pageYOffset
+// window.addEventListener('scroll', function() {
+//   var separator = document.querySelector('.separator');
+//   var scrollPosition = window.scrollY; // Utilisation de scrollY à la place de pageYOffset
 
-  var imageSrc = separator.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
+//   var imageSrc = separator.style.backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2').split(',')[0];
 
-  var image = new Image();
-  image.src = imageSrc;
+//   var image = new Image();
+//   image.src = imageSrc;
 
-  // Calculer la hauteur de l'image après le chargement
-  image.onload = function () {
-    var imageHeight = image.height;
+//   // Calculer la hauteur de l'image après le chargement
+//   image.onload = function () {
+//     var imageHeight = image.height;
 
-    // Ajuster la position du background en fonction du défilement et de la hauteur de l'image
-    separator.style.backgroundPositionY = ((imageHeight /2) - (scrollPosition * 0.3)) + 'px'; // Ajuster la vitesse du parallax
-  };
-});
+//     // Ajuster la position du background en fonction du défilement et de la hauteur de l'image
+//     separator.style.backgroundPositionY = ((imageHeight /2) - (scrollPosition * 0.3)) + 'px'; // Ajuster la vitesse du parallax
+//   };
+// });
