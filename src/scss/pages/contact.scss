@@ -102,7 +102,7 @@
                         label{
                             display: flex;
                             gap: 10px;
-                            margin-bottom: 0px;
+                            margin-bottom: 20px;
     
                             input{
                                 width: 15px !important;
@@ -121,9 +121,13 @@
                 }
 
                 .disclaimer{
-                    line-height: .6rem !important;
+                    line-height: 1rem !important;
                     margin-bottom: 40px;
                     font-size: .7rem;
+
+                    a{
+                        line-height: 1rem;
+                    }
                 }
             }
         }
