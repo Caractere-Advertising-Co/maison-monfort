@@ -9,8 +9,11 @@ $cta = get_field('cta_showroom','options');
 ?>
 
 <div id="section-showroom">
-    <div class="block-img separator" <?php if($banner): echo " style=\"background-image:url('".$banner['url']."\" alt=\"".$banner['title']."');\""; endif;?>>
-    </div>
+    <?php if($banner):?>
+        <div class="block-img separator">
+            <img src="<?php echo $banner['url'];?>" alt="<?php echo $banner['title'];?>" class="fixed"/>
+        </div>
+    <?php endif;?>
     <div class="container columns">
         <div class="colg">
             <span class="from-left"><?php if($title): echo $title; endif;?></span>
