@@ -46,12 +46,14 @@
         position: relative;
         z-index: 10;
         gap: 0;
+        pointer-events: none;
 
         .cold{
             background-color: $dark-dark-gray;
             padding: 80px 50px;
             color: $light;
             width: calc( 50% - 100px);
+            pointer-events: all;
 
             a{
                 color:$light;
