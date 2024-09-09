@@ -92,6 +92,24 @@
                         color: $light;
                     }
                 }
+
+                .wpcf7-acceptance{
+                    label{
+                        display: inline;
+
+                        input{
+                            width: 15px;
+                            display: inline;
+                        }
+
+                        .wpcf7-list-item-label{
+                            display: inline;
+                            font-size: .8rem;
+                            line-height: .6rem;
+                        
+                        }
+                    }
+                }
             }
         }
     }
