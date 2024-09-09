@@ -72,7 +72,13 @@
                         transform-origin: left;
                         transition: all ease-in 300ms;
                     }
+
+                    &:hover{
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                    }
                 }
+                
 
                 .sub-menu{
                     transform: scaleY(0);
@@ -101,7 +107,7 @@
 
                     .li{
                         letter-spacing: 3px;
-                        
+
                         .submenu{
                             transform: scaleY(1);
                             height: auto; /* Remettre à auto permet de s'adapter à la hauteur du contenu */
@@ -142,7 +148,7 @@
                     a {
                         &::after{
                             content: "";
-                            transform: translate(60%, -10%) rotate(45deg);            
+                            transform: translate(60%, -40%) rotate(45deg);            
                         }
                     }
                 }
