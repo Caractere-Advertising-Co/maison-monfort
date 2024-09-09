@@ -45,8 +45,9 @@ get_header();?>
     </div>
 </div>
 
-
-<?php get_template_part( 'templates-parts/section-showroom');?>
-<?php get_template_part( 'templates-parts/section-contact');?>
+<!--
+    <?php get_template_part( 'templates-parts/section-showroom');?>
+    <?php get_template_part( 'templates-parts/section-contact');?>
+-->
 
 <?php get_footer();?>
