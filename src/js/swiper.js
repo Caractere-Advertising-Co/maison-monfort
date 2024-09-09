@@ -1,8 +1,11 @@
+const { Autoplay } = require("swiper/modules");
+
 const hero = new Swiper( ".swiper-hero" , {
     slidesPerView : 3,
     cssMode: true,
     spaceBetween : 15,
     loop: true,
+    autoplay: true,
 
     breakpoints: {
         360:{
