@@ -124,5 +124,5 @@ for(let element of seeMoreBtn){
 window.addEventListener('scroll', function() {
   var separator = document.querySelector('.separator');
   var scrollPosition = window.scrollY; // Utilisation de scrollY à la place de pageYOffset
-  separator.style.backgroundPositionY = -(scrollPosition / 0.5) + 'px'; // Ajuster la vitesse
+  separator.style.backgroundPositionY = -(scrollPosition * 0.8) + 'px'; // Ajuster la vitesse
 });
