@@ -44,6 +44,8 @@ get_header();?>
                     <?php echo '<a href="'.$cta.'" class="cta">Lire plus</a>';?>
                 </div>
             <?php endif; ?> 
+
+            <?php echo $prevPost . " et " . $nextPost;?>
     </div>
 </div>
 
