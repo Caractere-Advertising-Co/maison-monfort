@@ -8,11 +8,17 @@ $copyright = get_field('copyright','options');
 $cookies   = get_field('cookies','options');
 $conf      = get_field('confidentialites','options');
 
+// Responsive
+
+$cttCol1Resp   = get_field('description-footer_resp','options');
+$cttCol2Resp   = get_field('horaires_resp','options');
+$cttCol3Resp   = get_field('infos_contact_footer_resp','options');
+
 ?>
 
 <footer>
     <div class="container">
-        <div class="footer-top">
+        <div class="footer-top no-mobile">
             <div class="col general-infos">
                 <?php $logo = get_field('logo_negatif','options');?>
                 
@@ -31,6 +37,28 @@ $conf      = get_field('confidentialites','options');
 
             <div class="col rs_footer">
                 <?php if($cttCol3): echo $cttCol3;endif;?>
+            </div>
+        </div>
+
+        <div class="footer-top no-desktop">
+            <div class="col general-infos">
+                <?php $logo = get_field('logo_negatif','options');?>
+                
+                <?php if($logo):?>
+                    <div class="logo-footer">
+                        <img src="<?php echo $logo['url'];?>" alt="<?php echo $logo['title'];?>" />
+                    </div>
+                <?php endif;?>
+                
+                <?php if($cttCol1Resp ): echo $cttCol1Resp ; endif;?>
+            </div>
+
+            <div class="col col-2">
+                <?php if($cttCol2Resp ): echo $cttCol2Resp ;endif;?>
+            </div>
+
+            <div class="col rs_footer">
+                <?php if($cttCol3Resp ): echo $cttCol3Resp ;endif;?>
             </div>
         </div>
     </div>
