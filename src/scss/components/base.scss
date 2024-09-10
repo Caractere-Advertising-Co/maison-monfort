@@ -201,8 +201,9 @@ img{
         }
 
         .colg{
-            width: calc(35% - 60px);
+            width: calc(40% - 60px);
             padding-right: 60px;
+
             h3,
             p,
             a{
@@ -233,10 +234,14 @@ img{
                     transform-origin: right;
                 }
             }
+
+            .cta{
+                margin-right: -15px;
+            }
         }
 
         .cold{
-            width: calc(35% - 60px);
+            width: calc(40% - 60px);
         }
 
         .colg + .cold{
