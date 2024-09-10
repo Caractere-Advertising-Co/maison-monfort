@@ -201,7 +201,7 @@ img{
         }
 
         .colg{
-            width: calc(40% - 60px);
+            width: calc(45% - 60px);
             padding-right: 60px;
 
             h3,
@@ -229,7 +229,7 @@ img{
             a{
 
                 &::before{
-                    right: 0;
+                    right: 15px;
                     left: auto;
                     transform-origin: right;
                 }
@@ -241,7 +241,7 @@ img{
         }
 
         .cold{
-            width: calc(40% - 60px);
+            width: calc(45% - 60px);
         }
 
         .colg + .cold{
