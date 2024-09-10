@@ -114,16 +114,14 @@
           
 
           a{
-            line-height: 1rem;re
-          }
+            line-height: 1.1rem;
 
-          strong{
-            a{
+            strong{
               font-weight: 500;
               color: $light !important;
             }
           }
-
+          
           a + a {
             margin-left: 10px;
             display: block;
