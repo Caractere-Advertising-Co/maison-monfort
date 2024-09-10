@@ -21,7 +21,7 @@ get_header();?>
                 <div class="colg">
                     <?php
                         $title = get_the_title($prevPost->ID);
-                        $textPrev = $textPrev->post_excerpt;
+                        $textPrev = $prevPost->post_excerpt;
                         $cta = get_permalink($prevPost->ID);
                         //$prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) ); ?>
                     
