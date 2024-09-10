@@ -21,7 +21,7 @@ get_header();?>
                 <div class="colg">
                     <?php
                         $title = get_the_title($prevPost->ID);
-                        $textPrev = get_the_content($prevPost->ID);
+                        $textPrev = $textPrev->post_excerpt;
                         $cta = get_permalink($prevPost->ID);
                         //$prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) ); ?>
                     
@@ -29,9 +29,6 @@ get_header();?>
                     <?php echo '<a href="'.$cta.'" class="cta">Lire plus    </a>';?>
                 </div>
             <?php endif; ?>
-
-            <?php var_dump($prevPost->post_excerpt);?>
-            <?php var_dump($nextPost->post_excerpt); ?>
 
             <?php if($nextPost) : ?>
                 <div class="cold">
