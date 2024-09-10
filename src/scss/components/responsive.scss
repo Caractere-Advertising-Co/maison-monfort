@@ -111,6 +111,18 @@
         .rs_footer {
           display: flex;
           flex-direction: column;
+          
+
+          a{
+            line-height: 1rem;re
+          }
+
+          strong{
+            a{
+              font-weight: 500;
+              color: $light !important;
+            }
+          }
 
           a + a {
             margin-left: 10px;
