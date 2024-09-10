@@ -1,5 +1,10 @@
 footer {
     background-color: $dark-dark-gray;
+
+    .no-desktop{
+      display: none;
+    }
+    
     .container {
       .footer-top {
         display: flex;

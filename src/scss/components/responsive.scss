@@ -3,6 +3,14 @@
     width: 80vw;
   }
 
+  .no-mobile{
+    display: none;
+  }
+
+  .no-desktop{
+    display: block;
+  }
+
   .cta {
     letter-spacing: 5px;
     padding: 10px 0;
@@ -54,6 +62,7 @@
       .footer-top {
         flex-direction: column;
         padding: 50px 0;
+        gap: 20px;
 
         .col {
           width: 100%;
@@ -92,6 +101,12 @@
               &:nth-child(2){
                 text-align: right;
               }
+            }
+          }
+
+          p{
+            a{
+              border-bottom: 1px solid $secondary-color;
             }
           }
         }
