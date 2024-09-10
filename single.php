@@ -38,7 +38,7 @@ get_header();?>
                         $cta = get_permalink($nextPost->ID );
                         //$prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) ); ?>
                     
-                    <?php echo '<a href="'.$cta.'" class="ctaTitle"><h3>'.$title .'</h3></a><p>'.substr($textNext,0,150) . '... </p><br>';?>
+                    <?php echo '<a href="'.$cta.'" class="ctaTitle"><h3>'.$title .'</h3></a><p>'.substr($textNext,0,150) . '... </p>';?>
                     <?php echo '<a href="'.$cta.'" class="cta">Lire plus</a>';?>
                 </div>
             <?php endif; ?>
