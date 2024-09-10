@@ -45,7 +45,7 @@ get_header();?>
                 </div>
             <?php endif; ?> 
 
-            <?php echo $prevPost . " et " . $nextPost;?>
+            <?php echo $textPrev . " et " . $textNext;?>
     </div>
 </div>
 
