@@ -184,6 +184,8 @@ img{
                 text-transform: none;
                 letter-spacing: 0;
                 font-weight: 500;
+                min-height: 60px;
+                line-height: 1.5rem;
 
                 &::after{
                     content: '→';
