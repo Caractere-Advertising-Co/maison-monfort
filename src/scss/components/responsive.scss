@@ -3,14 +3,6 @@
     width: 80vw;
   }
 
-  .no-mobile{
-    display: none;
-  }
-
-  .no-desktop{
-    display: block;
-  }
-
   .cta {
     letter-spacing: 5px;
     padding: 10px 0;
@@ -119,6 +111,14 @@
             margin-left: 10px;
           }
         }
+      }
+
+      .no-mobile{
+        display: none;
+      }
+    
+      .no-desktop{
+        display: flex;
       }
     }
 
