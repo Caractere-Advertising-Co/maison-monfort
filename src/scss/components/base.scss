@@ -34,10 +34,10 @@ body {
     width: 100vw;
 }
 
-// .fixed{
-//     position: fixed;
-//     left:5vw;
-// }
+.fixed{
+    position: fixed;
+    left:5vw;
+}
 
 img{
     width: 100%;
@@ -169,7 +169,6 @@ img{
 /* Navigation Articles */
 
 #navigation-post{
-
     .container{
         gap: 0;
         height: 450px;
