@@ -30,6 +30,8 @@ get_header();?>
                 </div>
             <?php endif; ?>
 
+            <?php echo $prevPost->ID .  "+" . $nextPost->ID; ?>
+
             <?php if($nextPost) : ?>
                 <div class="cold">
                     <?php
@@ -38,8 +40,8 @@ get_header();?>
                         $cta = get_permalink( $nextPost->ID );
                         //$prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) ); ?>
                     
-                    <?php echo '<a href="'.$cta.'" class="cta"><h3>'.$title .'</h3></a>'  .substr($textNext,0,150) . '... <br>';?>
-                    <?php echo '<a href="'.$cta.'" class="cta">Lire plus    </a>';?>
+                    <?php echo '<a href="'.$cta.'" class="cta"><h3>'.$title .'</h3></a>'.substr($textNext,0,150) . '... <br>';?>
+                    <?php echo '<a href="'.$cta.'" class="cta">Lire plus</a>';?>
                 </div>
             <?php endif; ?> 
     </div>
