@@ -1,10 +1,6 @@
 footer {
     background-color: $dark-dark-gray;
 
-    .no-desktop{
-      display: none;
-    }
-    
     .container {
       .footer-top {
         display: flex;
@@ -95,6 +91,10 @@ footer {
             margin: 20px 0;
           }
         }
+      }
+
+      .no-desktop{
+        display: none;
       }
     }
   
