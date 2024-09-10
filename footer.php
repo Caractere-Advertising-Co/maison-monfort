@@ -42,7 +42,7 @@ $cttCol3Resp   = get_field('infos_contact_footer_resp','options');
 
         <div class="footer-top no-desktop">
             <div class="col general-infos">
-                <?php $logo = get_field('logo_negatif','options');?>
+                <?php $logo = get_field('logo_negatif_resp','options');?>
                 
                 <?php if($logo):?>
                     <div class="logo-footer">
