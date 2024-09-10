@@ -30,14 +30,14 @@ get_header();?>
                 </div>
             <?php endif; ?>
 
-            <?php var_dump($prevPost);?>
-            <?php var_dump($nextPost); ?>
+            <?php var_dump($prevPost->post_excerpt);?>
+            <?php var_dump($nextPost->post_excerpt); ?>
 
             <?php if($nextPost) : ?>
                 <div class="cold">
                     <?php
                         $title = get_the_title($nextPost->ID);
-                        $textNext = get_the_content($nextPost->ID);
+                        $textNext = $nextPost->post_excerpt;
                         $cta = get_permalink( $nextPost->ID );
                         //$prevthumbnail = get_the_post_thumbnail($prevPost->ID, array(100,100) ); ?>
                     
