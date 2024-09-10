@@ -63,13 +63,16 @@
 
           p {
             text-align: center;
-            color: $light !important;
+            
+            strong{
+              color: $light !important;
+            }
           }
 
           .logo-footer {
             text-align: center;
-            height: 60px;
-            margin-bottom: 30px;
+            height: 100px;
+            margin-bottom: 20px;
 
             img {
               margin: auto;
