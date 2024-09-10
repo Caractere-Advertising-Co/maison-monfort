@@ -30,7 +30,8 @@ get_header();?>
                 </div>
             <?php endif; ?>
 
-            <?php echo $prevPost->ID .  "+" . $nextPost->ID; ?>
+            <?php var_dump($prevPost);?>
+            <?php var_dump($nextPost); ?>
 
             <?php if($nextPost) : ?>
                 <div class="cold">
@@ -43,9 +44,7 @@ get_header();?>
                     <?php echo '<a href="'.$cta.'" class="cta"><h3>'.$title .'</h3></a>'.substr($textNext,0,150) . '... <br>';?>
                     <?php echo '<a href="'.$cta.'" class="cta">Lire plus</a>';?>
                 </div>
-            <?php endif; ?> 
-
-            <?php echo $textPrev . " et " . $textNext;?>
+            <?php endif; ?>
     </div>
 </div>
 
