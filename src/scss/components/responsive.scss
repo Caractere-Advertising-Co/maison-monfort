@@ -98,7 +98,12 @@
 
           p{
             a{
-              border-bottom: 1px solid $secondary-color;
+              border-bottom: 1px solid $primary-color;
+              padding: 3px 15px;
+
+              strong{
+                color: $light !important;
+              }
             }
           }
         }
@@ -109,6 +114,9 @@
 
           a + a {
             margin-left: 10px;
+            display: block;
+            margin: auto;
+            width: fit-content;
           }
         }
       }
