@@ -4,5 +4,3 @@ import "./js/scrollToTop.js";
 import "./js/animate.js";
 
 require("fslightbox");
-
-
