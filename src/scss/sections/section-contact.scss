@@ -16,6 +16,18 @@
                     color:$primary-color;
                 }
             }
+
+            .rs-line{
+                display: flex;
+                gap: 30px;
+
+                a{
+                    svg{
+                        height: 25px;
+                        fill: $light;
+                    }
+                }
+            }
         }
 
         .cold{

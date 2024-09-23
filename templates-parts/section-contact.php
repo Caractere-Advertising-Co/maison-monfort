@@ -13,6 +13,7 @@ $banner = get_field('banner-contact','options');
     <div class="container columns">
         <div class="colg from-left">
             <?php if($description): echo $description; endif;?>
+           
         </div>
         <div class="cold from-right">
             <?php if($formulaire): echo do_shortcode($formulaire); endif;?>
