@@ -23,6 +23,18 @@
         .cold{
             width: 30%;
 
+            .rs-line{
+                display: flex;
+                gap: 30px;
+
+                a{
+                    svg{
+                        height: 25px;
+                        fill: $light;
+                    }
+                }
+            }
+
             h4{
                 text-transform: uppercase;
                 font-size: 1rem;
