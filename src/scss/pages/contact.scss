@@ -38,6 +38,18 @@
                     color: $primary-color;
                     letter-spacing: 10px;
                 }
+
+                .rs-line{
+                    display: flex;
+                    gap: 20px;
+                    margin-top: 50px;
+
+                    a{
+                        svg{
+                            height: 25px;
+                        }
+                    }
+                }
             }
         }
 
