@@ -5,13 +5,15 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999999;
-  background: #0178abbd;
+  background: #c2812ec9;
 
   .centerPopup {
       display: flex;
-      max-width: 440px;
-      top: 25vh;
+      max-width: 400px;
+      top: 20vh;
       margin: auto;
       position: relative;
 
@@ -20,8 +22,6 @@
         display: block;
         margin: auto;
         text-align: center;
-        background: #00a0e4;
-        height: 50vh;
 
         p {
           color: #fff;
@@ -52,11 +52,6 @@
             height: 15px;
             margin-right: 20px;
           }
-        }
-
-        .block-img{
-          max-height: 290px;
-          overflow: hidden;
         }
 
         img {
