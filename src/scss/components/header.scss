@@ -18,6 +18,10 @@ header {
             transition: all ease-in-out 300ms;
             transition-delay: 50ms;
             min-width: 135px;
+            
+            img{
+                object-fit: contain;
+            }
         }
 
         .logo.slideLogo{
