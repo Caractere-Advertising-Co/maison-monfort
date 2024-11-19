@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 
     <?php if(is_front_page(  )):
-       get_template_part( './template-parts/headers/popup');
+       get_template_part( './templates-parts/headers/popup');
     endif;?>
 
     <div id="scrollToTop">
